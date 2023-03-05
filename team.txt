@@ -1,0 +1,6 @@
+Shailesh - Login, SignUp & Payment
+Faizan - Navbar & Home Page
+Akash - Car & Package Page
+Shubham - Stays & Flight Page
+Shreedhar -
+
