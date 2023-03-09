@@ -1,0 +1,286 @@
+body {
+    background-color: rgba(239, 239, 248, 0.753)
+}
+
+/*  */
+
+
+
+/* below map lledt side css start */
+
+
+#product_main_div_1 {
+    /* border: 1px solid red; */
+    height: 100vh;
+}
+
+#search_by_name {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;
+    color: rgb(20, 29, 56);
+    margin-top: 25px;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    border: 1px solid rgb(208, 203, 203);
+}
+
+#Marriott {
+    margin-top: 30px;
+}
+
+#Marriott+p {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;
+    color: rgb(20, 29, 56);
+    margin-top: 28px;
+}
+
+#price_per_night {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(20, 29, 56);
+}
+
+#Payment_type {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(20, 29, 56);
+    margin-top: 15px;
+}
+
+#guest_rating {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(20, 29, 56);
+    margin-top: 15px;
+}
+
+/* below map lledt side css comlete */
+/* INPUT BOX CSS */
+#input_location {
+    width: 28%;
+    border-radius: 15px;
+    height: 50px;
+    padding-left: 10px;
+}
+#input_date {
+    width: 28%;
+    padding: 0px 90px;
+    border-radius: 15px;
+    height: 50px;
+}
+#input_count {
+    width: 28%;
+    padding: 0px 90px;
+    border-radius: 15px;
+    height: 50px;
+}
+#input_button_id{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    border: none;
+    font-weight: 600;
+}
+#input_div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: 60px;
+    margin-bottom: 55px;
+    margin-top: 50px;
+    gap: 25px;
+}
+/* iNPUT BOX CSS COMPLETED */
+#map_main_div {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    border: 1px solid rgb(255, 162, 0);
+    gap: 23px;
+}
+
+#map_left_side {
+    height: 160px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#below_map {
+    margin-top: 30px;
+}
+
+
+
+
+
+/* */
+#product_main_div {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    /* border: 1px solid rgb(0, 255, 81); */
+}
+
+#product_main_div_1 {
+    width: 22%;
+    /* border: 1px solid rgb(0, 94, 255); */
+}
+
+#product_main_div_2 {
+    width: 73%;
+    /* border: 1px solid rgb(195, 255, 0); */
+
+}
+
+#div1_id {
+    display: flex;
+    /* border: 1px solid rgb(119, 0, 255); */
+    height: 270px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#div2_id {
+    width: 35%;
+    height: 270px;
+    /* border: 3px solid red; */
+}
+
+#div3_id {
+    width: 65%;
+    height: 270px;
+    background-color: white;
+    padding: 10px;
+}
+
+#div5_id {
+    display: flex;
+    justify-content: space-between;
+}
+
+#div2_id_img {
+    width: 100%;
+    height: 100%;
+}
+
+#hotel_name_id {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    Color: rgb(20, 29, 56);
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#hotel_city_id {
+    margin-top: -18px;
+    margin-left: 10px;
+    Color: rgb(20, 29, 56);
+}
+
+#des1_id {
+    Color: rgb(20, 29, 56);
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+#des2_id {
+    Color: rgb(20, 29, 56);
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: -18px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#div6_text3 {
+    margin-left: 10px;
+    margin-top: 18px;
+    color: rgb(28, 100, 92);
+    font-size: 16px;
+}
+
+#div6_text4 {
+    margin-left: 10px;
+    margin-top: -18px;
+    color: rgb(28, 100, 92);
+    font-size: 16px;
+}
+
+#div6_rating {
+    Color: rgb(20, 29, 56);
+    font-size: 15px;
+    margin-left: 12px;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+#div7_div_btn {
+    border: 1px solid rgb(13, 112, 102);
+    display: inline-block;
+    background-color: rgb(13, 112, 102);
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px;
+    color: white;
+}
+
+#div7_div_p1 {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    Color: rgb(20, 29, 56);
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin-top: -10px;
+}
+
+#div7_div_p2 {
+    Color: rgb(20, 29, 56);
+    font-size: 13px;
+    margin-top: -18px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
+/* Font Family:Centra No2
+
+ Font Weight:500
+ 
+ Font Size:20px
+ 
+ Font LineHeight:24px
+ 
+ Font Color:rgb(20, 29, 56)
+ 
+ Font Style:normal */
