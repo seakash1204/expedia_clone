@@ -103,3 +103,207 @@ p,#fname,#lname{
 #right_one > img{
     width: 100%;
 }
+.descript1{
+    margin: auto;
+}
+.block{
+    display: block;
+}
+.flexjs{
+    display: flex;
+    justify-content: space-between;
+}
+.descript1{
+    margin: 30px 0px;
+}
+
+
+#navbar > nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(163, 163, 163);
+    padding: 0px 80px;
+    height: 5em;
+    font-family: 'Inter', sans-serif;
+}
+
+.dropdown{
+    /* border: 1px solid ; */
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.dropdown > button {
+    background-color: white;
+    color:#343B53;
+    border: none;
+}
+.dropdown > button:hover{
+    background-color: white;
+    color: rgb(54,98,216);
+}
+
+.dropdown > button:focus{
+    background-color: white;
+    color: rgb(54,98,216);
+}
+
+.dropdown > .dropdown-menu{
+    /* display: flex; */
+    width: 60%;
+    height: 60vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown > .dropdown-menu > li{
+    color: #525a75;
+    padding: 0.58em 1em;
+}
+
+.dropdown > .dropdown-menu > li a i{
+    padding-right: 10px;
+    font-size: 20px;
+    color: #525a75;
+}
+
+#navbar > nav a:hover{
+    color: rgb(54,98,216);
+}
+
+#rightDiv{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+#rightDiv > ul{
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+#rightDiv > ul > li a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    color:#343B53;
+    font-weight: 580;
+    padding: 0 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+#rightDiv ul li:first-child a i{
+    margin: 0 10px;
+}
+
+#rightDiv ul li:nth-child(4) a i{
+    font-size: 22px;
+}
+
+#rightDiv > ul > li > a > i{
+    font-size: 18px;
+}
+
+
+
+/* End of the navbar */
+
+/* Overlay */
+
+.overlay{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.showOverlay{
+    opacity: 1;
+    z-index: 1;
+}
+
+.lang{
+    width: 35%;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+    z-index: 9;
+}
+
+.showlang{
+    top: 50%;
+}
+
+.lang span{
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+    width: 30px;
+    height: 30px;
+    color: #343B53;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.lang > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* padding: 5px 10px 0 0; */
+    padding-top: 20px;
+    background-color: #343B53;
+    color: white;
+    margin: 2em 0;
+    padding: 0 1em;
+}
+
+.lang > div:nth-child(2) p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.lang form{
+    padding: 0 1.8em;
+}
+
+.lang select{
+    width: 100%;
+    height: 3em;
+    padding: 0 0.5em;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.lang button{
+    background-color: rgb(54,98,216);
+    color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 4em;
+    height: 2.8em;
+    font-size: 1.2em;
+}
+
+

@@ -6,13 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../payment/payment.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/51a4e66285.js" crossorigin="anonymous"></script>
     <title>Payment</title>
 </head>
 
 <body>
 
     <div id="universal">
+        <div id="navbar">
+            <nav>
+                <div id="logo">
+                    <img src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1" alt="logo">
+                </div>
+    
+                <!-- <div class="dropdown">
+                    <button class="btn bg-white btn-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More travel
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-hotel"></i> Stays</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plane"></i>  Flights</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-car"></i> Cars</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-person-walking-luggage"></i> Packages</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-ticket"></i> Holiday Activities</a></li>
+                      <li><a class="dropdown-item" href="#">Deals</a></li>
+                      <li><a class="dropdown-item" href="#">Groups & Meetings</a></li>
+                      <li><a class="dropdown-item" href="#">Mobile</a></li>
+                    </ul>
+                </div> -->
+    
+                <!-- <div id="rightDiv">
+                    <ul>
+                        <li id="popup" onclick="showModal()">
+                            <a href="#" ><i class="fa-solid fa-globe"></i>English</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Trips</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">Sign in</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </nav>
+            <div class="overlay"></div>
+    
+            <div class="lang">
+                <div>
+                    <span><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-info"></i><br>
+                    <br><p> You can only access your trip information and Expedia Rewards points from the Expedia site you booked on.</p>
+                </div>
+                <form action="">
+                    <select name="" id="region">
+                        <option value="India">India</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+    
+                    <select name="" id="language">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                    </select>
+                    <button>Save</button>
+                </form>
+            </div>
+        </div>
         <div id="container">
+                 
+
             <div id="main">
                 <div id="checkin" class="shade">
                     <h2>Who's checking in?</h2>
@@ -175,7 +249,7 @@
                                 <h4 style="color: rgb(97,97,97);">Security code <span style="color: red;">*</span></h4><br>
                                  <input type="text" style="max-width: 4.23529412em; min-height: 2.11764706rem;
                                  border-color: #858585 #c2c2c2 #c2c2c2;
-                                 border-radius: 3px;" id="sec_code">                                
+                                 border-radius: 3px;" id="sec_code" class="security_code">                                
                             </div>
 
                             <div><h4 style="color: rgb(97,97,97);">Billing ZIP code <span style="color: red;">*</span></h4><br>
@@ -263,40 +337,14 @@
             </div>
     
             <div id="right">
-                <div id="right_one" class="shade">
-                    <img src="https://images.trvl-media.com/lodging/13000000/12280000/12270500/12270445/0e9dd9b7_l.jpg" alt="">
-                     <h2>Conrad Pune by Hilton</h2>
-                     <h4>9.4/10 Wonderful (161 reviews)</h4>
-                     <p> <span style="font-weight: bold;">1 Room:</span> Deluxe Room, 1 King Bed</p>
-                     <div class="flex">
-                        <p style="margin-right: 10px;">1 King Bed</p>
-                        <p style="margin-right: 10px;">Sleeps 3</p>
-                        <p>Free parking</p>
-                     </div>
-            
-                </div>
-         
-                <div id="right_two" class="shade">
-                    <h2>Price details</h2>
-                    <hr>
-                    <div class="flex">
-                        <p style="margin-right: 80px;">1 room x 1 night</p>
-                        <p>$189.21</p>
-                    </div>
-
-                    <hr>
-
-                    <div class="flex">
-                        <p style="margin-right: 80px;">Taxes and fees</p>
-                        <p>$34.06</p>
-                    </div>
-                    
-                </div>
+                
             </div>
     
         </div>
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 
