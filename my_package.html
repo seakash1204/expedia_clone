@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore New Package</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="my_package.css">
+    <link rel="stylesheet" href="package.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <nav>
+            <div id="logo">
+                <img src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2" alt="logo">
+            </div>
+
+            <div class="dropdown">
+                <button class="btn bg-white btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    More travel
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-hotel"></i> Stays</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plane"></i> Flights</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-car"></i> Cars</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-person-walking-luggage"></i>
+                            Packages</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-ticket"></i> Holiday Activities</a></li>
+                    <li><a class="dropdown-item" href="#">Deals</a></li>
+                    <li><a class="dropdown-item" href="#">Groups & Meetings</a></li>
+                    <li><a class="dropdown-item" href="#">Mobile</a></li>
+                </ul>
+            </div>
+
+            <div id="rightDiv">
+                <ul>
+                    <li id="popup" onclick="showModal()">
+                        <a href="#"><i class="fa-solid fa-globe"></i>English</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Trips</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="overlay"></div>
+
+        <div class="lang">
+            <div>
+                <span><i class="fa-sharp fa-solid fa-xmark"></i></span>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-info"></i><br>
+                <br>
+                <p> You can only access your trip information and Expedia Rewards points from the Expedia site you
+                    booked on.</p>
+            </div>
+            <form action="">
+                <select name="" id="region">
+                    <option value="India">India</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                </select>
+
+                <select name="" id="language">
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                </select>
+                <button>Save</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="main-input">
+        <div class="logo1">
+            <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
+            <input type="text" placeholder="Leaving from" class="input-out" />
+        </div>
+        <div class="logo1">
+            <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
+            <input type="text" placeholder="Going to" id="input-out" class="input-out" />
+        </div>
+        <div class="logo1">
+            <p class="logo-out"><i class="fa-solid fa-user"></i></p>
+            <input type="text" placeholder="Travellers" class="input-out" />
+        </div>
+        <div class="logo1">
+            <p class="logo-out"><i class="fa-solid fa-money-dot"></i></p>
+            <input type="text" placeholder="Economy" class="input-out" />
+        </div>
+        <div class="logo1">
+            <p class="logo-out"><i class="fa-solid fa-calendar-day"></i></p>
+            <input type="date" placeholder="Pick-up" class="input-out" />
+        </div>
+        <div class="logo1">
+            <p class="logo-out"><i class="fa-solid fa-calendar-day"></i></p>
+            <input type="date" placeholder="Pick-up" class="input-out" />
+        </div>
+
+    </div>
+    <div class="check">
+        <p><input type="checkbox" name="" class="large-check" id="">Direct flights only</p>
+        <p><input type="checkbox" name="" class="large-check" id="">I only need accommodation for part of my trip</p>
+        <button id="sear">Search</button>
+    </div>
+
+    <div class="choose-stay">
+        <p style="color:black"> <b>Choose your stay</b><span>></span></p>
+        <p>Choose departing flight <span>></span></p>
+        <p>Choose returning flight <span>></span></p>
+        <p>Review your trip </p>
+    </div>
+
+    <div class="main-data">
+        <div class="left-div">
+            <div class="map"><img src="map.PNG" alt=""></div>
+            <div class="hr-line">
+                <hr>
+            </div>
+            <div class="wrapper">
+                <h3>Search by property name</h3>
+                <div class="search-input">
+                    <a href="" target="_blank" hidden></a>
+                    <input type="text" id="search-bar" placeholder="Type to search..">
+                    <div class="autocom-box">
+                        <!-- here list are inserted from javascript -->
+                    </div>
+                    <div class="icon"><i id="icon-search" class="fas fa-search"></i></div>
+                </div>
+            </div>
+            <div class="hr-line">
+                <hr>
+            </div>
+
+            <div class="filter-by">
+                <h3>Filter by</h3>
+                <div class="checkboxes">
+                    <h4>Property cancellation options</h4>
+                    <div> <input type="checkbox" name="" class="large-check" id=""><span>
+                            Fully refundable property</span></div>
+                </div>
+                <div class="checkboxes">
+                    <h4>Expedia Rewards</h4>
+                    <div> <input type="checkbox" name="" class="large-check" id=""><span>VIP Access properties
+                            Top-rated stays with member perks</span></div>
+                </div>
+                <div class="popular-filter">
+                    <h4>Popular filter</h4>
+                    <div class="popular-check"> <input type="checkbox" name="" class="large-check" id=""><span>
+                            Dinner included</span></div>
+
+                    <div class="popular-check"> <input type="checkbox" name="" class="large-check"
+                            id=""><span>Gym</span></div>
+
+                    <div class="popular-check"> <input type="checkbox" name="" class="large-check" id=""><span>Sea
+                            view</span></div>
+
+                    <div class="popular-check"> <input type="checkbox" name="" class="large-check"
+                            id=""><span>All-inclusive plan available
+                        </span></div>
+
+                    <div class="popular-check"> <input type="checkbox" name="" class="large-check"
+                            id=""><span>All-inclusive</span></div>
+                </div>
+
+
+                <div class="review-star">
+                    <h4>Propert class</h4>
+                    <div class="star-filter">
+                        <div class="star">1★</div>
+                        <div class="star">2★</div>
+                        <div class="star">3★</div>
+                        <div class="star">4★</div>
+                        <div class="star">5★</div>
+                    </div>
+                </div>
+
+                <div class="guest-rating">
+                    <h4>Guest rating</h4>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Any</span></div>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Wonderful 4.5+</span>
+                    </div>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Very good 4+</span>
+                    </div>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Good 3.5+</span>
+                    </div>
+                </div>
+
+                <div class="property-type">
+                    <h4>Property type</h4>
+                    <div class="property"> <input type="checkbox" name="" class="large-check" id=""><span>Condominium
+                            resort</span></div>
+
+                    <div class="property"> <input type="checkbox" name="" class="large-check" id=""><span>Villa</span>
+                    </div>
+
+                    <div class="property"> <input type="checkbox" name="" class="large-check" id=""><span>Condo</span>
+                    </div>
+                </div>
+
+                <div class="area">
+                    <h4>Area</h4>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Cavelossim</span>
+                    </div>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Panaji</span></div>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Uttorda</span></div>
+                </div>
+
+                <div class="popular-location">
+                    <h4>Popular location</h4>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Colva Beach</span>
+                    </div>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Calangute
+                            Beach</span></div>
+                    <div class="radio"><input type="radio" class="large-radio" name="" id=""><span>Miramar Beach</span>
+                    </div>
+                </div>
+
+                <div class="meal-plan">
+                    <h4>Meal plan</h4>
+                    <div class="meal"> <input type="checkbox" name="" class="large-check" id=""><span>Breakfast
+                            included</span></div>
+
+                    <div class="meal"> <input type="checkbox" name="" class="large-check" id=""><span>Lunch
+                            included</span></div>
+
+                    <div class="meal"> <input type="checkbox" name="" class="large-check" id=""><span>Dinner
+                            included</span></div>
+                </div>
+
+                <div class="amenities">
+                    <h4>Amenities</h4>
+                    <div class="ame"> <input type="checkbox" name="" class="large-check" id=""><span>Gym</span></div>
+
+                    <div class="ame"> <input type="checkbox" name="" class="large-check" id=""><span>Sea view</span>
+                    </div>
+
+                    <div class="ame"> <input type="checkbox" name="" class="large-check" id=""><span>All-inclusive plan
+                            available</span></div>
+                </div>
+
+                <div class="accessibility">
+                    <h4>Accessibility</h4>
+                    <div class="acce"> <input type="checkbox" name="" class="large-check"
+                            id=""><span>Wheelchair-accessible parking</span></div>
+
+                    <div class="acce"> <input type="checkbox" name="" class="large-check" id=""><span>Lift</span></div>
+
+                    <div class="acce"> <input type="checkbox" name="" class="large-check" id=""><span>Accessible
+                            bathroom</span></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right-div">
+            <div class="rigth-top">
+                <div class="info">
+                    <p class="info-p">Trip prices include return flight + stay, taxes and fees.</p>
+                    <h5>See how we pick our recommended properties</h5>
+                </div>
+                <div class="recommended">
+                    <select name="sorting" id="sort">
+                        <option value="pop">Recommended</option>
+                        <option value="lth">Price low to high</option>
+                        <option value="htl">Price high to low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="refund-info">
+                <div><img src="refund_property.PNG" alt="refund"></div>
+                <div>
+                    <h5>Stay flexible with a fully refundable property</h5>
+                    <p>We recommend booking a fully refundable stay in case your plans change.</p>
+                    <a href="">Select from fully refundable properties</a>
+                </div>
+            </div>
+
+            <div id="packages-data"></div>
+
+
+
+        </div>
+        <!-- end of refund info -->
+
+    </div>
+
+
+    <div id="box5">
+        <div>
+            <p style="text-align: center; font-size: 13px;">Explore a world of travel with Expedia</p>
+            <p style="text-align: center;color: rgb(53, 53, 198); font-size: 13px;">Discover new places and experiences
+            </p>
+        </div>
+        </br>
+        </br>
+
+
+        <!-- footer -->
+        <div id="footerImg"><img
+                src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" />
+        </div>
+        <div id="footer">
+
+            <div>
+                <p>Company</p>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">List your property</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Advertising</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Explore</p>
+                <ul>
+                    <li><a href="#">United States of America travel guide</a></li>
+                    <li><a href="#">Hotels in United States of America</a></li>
+                    <li><a href="#">Vacation rentals in United States of America</a></li>
+                    <li><a href="#">Vacation packages in United States of America</a></li>
+                    <li><a href="#">Domestic flights</a></li>
+                    <li><a href="#">Car rentals in United States of America</a></li>
+                    <li><a href="#">All accommodation types</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Policies</p>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Vrbo terms and conditions</a></li>
+                    <li><a href="#">Expedia Rewards Terms</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Do not sell my personal information</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Help</p>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Cancel your flight</a></li>
+                    <li><a href="#">Refund timelines, policies & processes</a></li>
+                    <li><a href="#">Use an Expedia coupon</a></li>
+                    <li><a href="#">International travel documents</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="disclaimer">
+            <p>Expedia, Inc. is not responsible for content on external Web sites.</p>
+            <p>
+                © 2022 Expedia, Inc., an Expedia Group company. All rights reserved.
+                Expedia and the Airplane Logo are trademarks or registered trademarks of
+                Expedia, Inc. CST# 2029030-50.
+            </p>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<script src="my_package.js"></script>
+<script src="navbar.js"></script>
