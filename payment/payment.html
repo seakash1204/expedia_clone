@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../payment/payment.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/51a4e66285.js" crossorigin="anonymous"></script>
+    <title>Payment</title>
+</head>
+
+<body>
+
+    <div id="universal">
+        <div id="navbar">
+            <nav>
+                <div id="logo">
+                    <img src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1" alt="logo">
+                </div>
+    
+                <!-- <div class="dropdown">
+                    <button class="btn bg-white btn-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More travel
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-hotel"></i> Stays</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plane"></i>  Flights</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-car"></i> Cars</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-person-walking-luggage"></i> Packages</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-ticket"></i> Holiday Activities</a></li>
+                      <li><a class="dropdown-item" href="#">Deals</a></li>
+                      <li><a class="dropdown-item" href="#">Groups & Meetings</a></li>
+                      <li><a class="dropdown-item" href="#">Mobile</a></li>
+                    </ul>
+                </div> -->
+    
+                <!-- <div id="rightDiv">
+                    <ul>
+                        <li id="popup" onclick="showModal()">
+                            <a href="#" ><i class="fa-solid fa-globe"></i>English</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Trips</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">Sign in</a>
+                        </li>
+                    </ul>
+                    hello commiting changes
+                </div> -->
+            </nav>
+            <div class="overlay"></div>
+    
+            <div class="lang">
+                <div>
+                    <span><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-info"></i><br>
+                    <br><p> You can only access your trip information and Expedia Rewards points from the Expedia site you booked on.</p>
+                </div>
+                <form action="">
+                    <select name="" id="region">
+                        <option value="India">India</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+    
+                    <select name="" id="language">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                    </select>
+                    <button>Save</button>
+                </form>
+            </div>
+        </div>
+        <div id="container">
+                 
+
+            <div id="main">
+                <div id="checkin" class="shade">
+                    <h2>Who's checking in?</h2>
+                    <p><span class="bold">Room 1:</span> 2 Adults 1 King Bed Non-smoking</p>
+                    <form id="form">
+                         <div class="flex">
+                            <div class="input"><label for="fname"
+                                 style="color: rgb(97,97,97);
+                                 font-weight: bold;"
+                                 class="font">First name <span style="color: green;">*</span></label><br>
+                                <input type="text" id="fname" style="padding: 8px 8px;
+                                border-color: #858585 #c2c2c2 #c2c2c2;"></div><br>
+                            <div class="input"><label for="lname"
+                                style="color: rgb(97,97,97);
+                                font-weight: bold;"
+                                class="font">Last name <span style="color: green;">*</span></label><br>
+                                <input type="text" id="lname" style="padding: 8px 8px;
+                                border-color: #858585 #c2c2c2 #c2c2c2;"></div><br>                                                                                  
+                        </div>
+                        
+                        <div style="margin-bottom: 10px;"><label for="mobile"
+                            style="color: rgb(97,97,97);
+                            font-weight: bold;"
+                            class="font">Mobile phone number <span style="color: green;">*</span></label> <br>
+                            <input type="number" id="mobile" style="padding: 8px 8px;
+                            border-color: #858585 #c2c2c2 #c2c2c2;"></div>
+                        
+                            <div><input type="checkbox" id="checkbox">
+                                <label for="checkbox" class="font">Receive text alerts about this trip. Message and data rates may apply.</label></div>
+                    </form>
+                </div>
+    
+                <div id="protect" class="shade">
+                    <div style="display: inline-block;"><h2>Protect your hotel
+                        <span id="recom">Recommended</span> </h2>
+                        </div>
+                    
+                    <div class="border">
+                        <p><span class="bold">Important: </span> Trip cancellation due to government travel advisories, fear
+                            of
+                            travel, or change of mind is not covered. Travel insurance may provide coverage for COVID-19
+                            diagnosed illness. COVID-19 is a foreseen event and certain other coverages will not apply</p>
+                    </div>
+    
+                    <div>
+                        <h4>Note: Resident of New York or Washington?</h4>
+                        <p>Select your state if you are a resident of New York or Washington, to view plans eligible for
+                            your
+                            state.</p>
+                    </div>
+    
+                    <div>
+                        <h4>4 reasons you might need travel protection</h4>
+                        <p>1. You get delayed for covered reasons and miss a night of your hotel stay</p>
+                        <p>2. You're sick and don't use all your hotel nights</p>
+                        <p>3. You need to extend your trip due to the illness of a travel companion</p>
+                        <p>4. You need up to $10,000 for covered medical expenses while on your trip</p>
+                        <p style="font-style: italic;
+                        font-size: .7947058823529411em;">“ Things happened outside of my control which caused the trip to be canceled. The Travel
+                            Protection
+                            was valuable in reducing the losses to me when we had to cancel the trip. ” - Mr. Rodman</p>
+                    </div>
+                </div>
+    
+                <div id="payment" class="shade">
+                    <div id="green">
+                        <span style="margin-right: 20px;"> We use secure transmission</span>
+                        <span > We protect your personal information</span>
+                    </div>
+    
+                    <div class="flex">
+                        <p style="margin-right: 10px;">Debit/Credit Card</p>
+                        <p style="color: rgb(0,101,184);
+                        margin-right: 10px;">PayPal</p>
+                        <p style="color: rgb(0,101,184);
+                        margin-right: 10px;">Monthly Payments</p>
+                        <p style="color: rgb(0,101,184);
+                        margin-right: 10px;"></p>
+                        <p style="color: rgb(0,101,184);">Click To Pay</p>
+                    </div>
+    
+                    <hr style="color: rgb(133,133,133);">
+    
+                    <div id="imgs" class="flex">
+                        <img style="width: 30px;
+                        margin-right: 10px;" src="https://a.travel-assets.com/dms-svg/payments/cards-cc_master_card.svg" alt="">
+                        <img style="width: 30px;
+                        margin-right: 10px;" src="https://a.travel-assets.com/dms-svg/payments/cards-cc_american_express.svg" alt="">
+                        <img style="width: 30px;
+                        margin-right: 10px;" src="https://a.travel-assets.com/dms-svg/payments/cards-cc_china_union_pay.svg" alt="">
+                        <img style="width: 30px;
+                        margin-right: 10px;" src="https://a.travel-assets.com/dms-svg/payments/cards-cc_diners_club.svg" alt="">
+                        <img style="width: 30px;
+                        margin-right: 10px;" src="https://a.travel-assets.com/dms-svg/payments/cards-cc_discover.svg" alt="">
+                        <img style="width: 30px;
+                        margin-right: 10px;" src="https://a.travel-assets.com/dms-svg/payments/cards-cc_jcb.svg" alt="">
+                        <img style="width: 30px;
+                        margin-right: 10px;" src="https://img.icons8.com/color-glass/1x/visa.png" alt="">
+                    </div>
+    
+                    <form id="payment_form">
+                        <label for="cardName"
+                         style="color: rgb(97,97,97);"
+                         class="font">Name on Card <span style="color: red;">*</span></label><br>
+                        <input type="text" id="cardName" style="padding: 8px 120px;
+                        margin-bottom: 10px;
+                        border-color: #858585 #c2c2c2 #c2c2c2;
+                        "
+                        ><br>
+                        <label for="debit"
+                        style="color: rgb(97,97,97);" 
+                        class="font">Debit/Credit card number<span style="color: red;">*</span></label><br>
+                        <input type="number" id="debit" style="padding: 8px 40px;
+                        border-color: #858585 #c2c2c2 #c2c2c2;">
+                       
+                       <div id="expiration">
+                            <h4 style="color: rgb(97,97,97);">Expiration Date <span style="color: red;">*</span></h4>
+                            <select  style="padding: 10px;
+                            background-color: rgb(236,236,236);
+                            border-radius: 5px;" id="month">
+                                <option value="Expiration Date">Month</option>
+                                <option value='1'>Janaury</option>
+                                <option value='2'>February</option>
+                                <option value='3'>March</option>
+                                <option value='4'>April</option>
+                                <option value='5'>May</option>
+                                <option value='6'>June</option>
+                                <option value='7'>July</option>
+                                <option value='8'>August</option>
+                                <option value='9'>September</option>
+                                <option value='10'>October</option>
+                                <option value='11'>November</option>
+                                <option value='12'>December</option>
+                            </select>
+    
+                            <select id="year" style="padding: 10px;
+                            background-color: rgb(236,236,236);
+                            border-radius: 5px;">
+                                <option value=''>Year</option>                               
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+                        </div>
+    
+                        <div id="sec_code" style="display: flex;">
+                            <div style="margin-right: 20px;">
+                                <h4 style="color: rgb(97,97,97);">Security code <span style="color: red;">*</span></h4><br>
+                                 <input type="text" style="max-width: 4.23529412em; min-height: 2.11764706rem;
+                                 border-color: #858585 #c2c2c2 #c2c2c2;
+                                 border-radius: 3px;" id="sec_code" class="security_code">                                
+                            </div>
+
+                            <div><h4 style="color: rgb(97,97,97);">Billing ZIP code <span style="color: red;">*</span></h4><br>
+                                <input type="number" style="    max-width: 8.82352941em; min-height: 2.11764706rem;
+                                border-color: #858585 #c2c2c2 #c2c2c2;
+                                border-radius: 3px;" name="" id="zip_code"></div>
+                        </div>
+                    </form>
+                </div>
+    
+                <div id="booking" class="shade">
+                    <h2>Manage your booking</h2>
+                    <h4>Confirmation email</h4>
+                    <p>Please enter the email address where you would like to receive your confirmation.</p>
+                    <label for="email" style="color: rgb(97,97,97);
+                    font-weight: bold;
+                    " class="font">Email address <span style="color: red;">*</span></label><br>
+                    <input type="email" name="" id="email" style="padding: 8px 120px;
+                    border-color: #858585 #c2c2c2 #c2c2c2;
+                    border-radius: 3px;">
+    
+                    <hr style="color: rgb(133,133,133);">
+    
+                    <h4>Create an account</h4>
+                    <div style="display: flex; ">
+                        <p style="color: green;margin-right: 10px;">Earn points for free travel</p>
+                        <p style="color: green; margin-right: 10px;">Save with Member Prices</p>
+                        <p style="color: green;">Easily access your itineraries</p>
+                    </div>
+    
+                    <p>Enter a password to create an account using the email address above.</p>
+    
+                    <label for="password" style="color: rgb(97,97,97);
+                    font-weight: bold;" class="font">Create password</label><br>
+                    <input type="password" name="" id="password" style="padding: 0.47058824rem 0.70588235rem;
+                    border-color: #858585 #c2c2c2 #c2c2c2;
+                    border-radius: 3px;"><br>
+
+                    <label for="confirm" style="color: rgb(97,97,97);
+                     font-weight: bold;" class="font">Confirm password</label><br>
+                    <input type="password" name="" id="confirm" style="padding: 0.47058824rem 0.70588235rem;
+                    border-color: #858585 #c2c2c2 #c2c2c2;
+                    border-radius: 3px;"><br>
+                    <p>By creating an account, I agree to the
+                        <span style="color: rgb(0,101,184);">Terms of Use opens in a new window, Privacy Statement opens in
+                            a new window, and Expedia Rewards Terms</span>
+                        <span>and</span>
+                        <span style="color: rgb(0,101,184);">Condtions.</span>
+                    </p>
+    
+                </div>
+    
+                <div id="information" class="shade">
+                    <h2>Important information</h2>
+                    <p style="margin-bottom: 5px;">* Cancellations or changes made after 11:59pm (property local time) on Mar 21, 2023 or no-shows are
+                        subject to a property fee equal to 100% of the total amount paid for the reservation.</p>
+                    <p style="margin-bottom: 30px;">* This property offers transfers from the airport (surcharges may apply). Guests must contact the
+                        property with arrival details before travel, using the contact information on the booking
+                        confirmation. Front desk staff will greet guests on arrival. Guests are recommended to download the
+                        property's Hilton Honors mobile app before check-in.
+                    </p>
+    
+                    <p>By clicking on the button below, I acknowledge that I have reviewed the
+                        <span style="color: rgb(0,101,184);"> Privacy Statement Government Travel Advice</span>
+                        and have reviewed and accept the
+                        <span style="color: rgb(0,101,184);">Rules & Restrictions</span>
+                        and
+                        <span style="color: rgb(0,101,184);">Terms of Use.</span>
+                    </p>
+    
+                    <p style="color: green;">Change of plans? No problem. You can cancel for a full refund before
+                        <span style="color: rgb(0,101,184);">checkin</span>
+                    </p>
+    
+                    <button id="btn">Complete Booking ></button>
+                    <div style="display: flex; margin-bottom: 20px;">
+                        <img style="margin-right: 10px;" src="https://img.icons8.com/material-two-tone/1x/lock.png" alt="">
+                        <p>We use secure transmission and encrypted storage to protect your personal information.</p>
+                    </div>
+                    <p>This payment will be processed in the U.S. This does not apply when the travel provider
+                        (airline/hotel/rail, etc.) processes your payment.
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div id="right">
+                
+            </div>
+    
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<script src="../payment/payment.js"></script>
