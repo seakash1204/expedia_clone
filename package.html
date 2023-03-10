@@ -25,7 +25,7 @@
     <button id="car">Add a car</button>
 
     <select id="selectTag">
-      <option value=" 1 room,2 travellers"> 1 room,2 travellers</option>
+      <option value=" 1 room,2 travellers"> 1 Room, 2 Travellers</option>
     </select>
 
   </div>
@@ -181,7 +181,7 @@
 </div>
 <br />
 <div id="pack">
-  <h2>Find your next vacation package</h2>
+  <h2 style="font-size: 30px;">Find your next vacation package</h2>
   <div id="grid-3">
     <div>
       <h5>Are vacation packages worth it?</h5>
@@ -425,9 +425,11 @@
 </div>
 <br />
 <!-- footer -->
-<div id="footer">
-  <img
+<div id="footerImg"><img
     src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" />
+</div>
+<div id="footer">
+
   <div>
     <p>Company</p>
     <ul>
@@ -487,16 +489,16 @@
 </html>
 <script src="package.js"></script>
 <script>
-  document.getElementById("sear").addEventListener('click', function(){
-        let inputField = document.querySelector("#input-out").value;
+  document.getElementById("sear").addEventListener('click', function () {
+    let inputField = document.querySelector("#input-out").value;
 
-        if(inputField==""){
-        alert("Please fill source to destination !")
-       }
-       else{
-            window.location.href = "my_package.html"
-       }   
-    })
+    if (inputField == "") {
+      alert("Please fill source to destination !")
+    }
+    else {
+      window.location.href = "my_package.html"
+    }
+  })
 </script>
 
 

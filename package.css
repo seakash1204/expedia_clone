@@ -4,22 +4,24 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        
 }
 
 #vacc {
     margin-left: 40px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-bottom: 10px;
     font-weight: 500
 }
 
-#vacc-p {
+#vacc-p,
+#des,
+#summer,
+#pack>h2 {
     margin-left: 40px;
 }
 
 #acc {
-    /* margin-left: 5%;
-    margin-top: -50px; */
     margin-left: 40px;
     height: 18px;
     width: 18px;
@@ -32,79 +34,26 @@
     font-weight: 500;
 }
 
-#des {
-    margin-left: 40px;
-}
-
-#summer {
-    margin-left: 40px;
-}
-
-#summer>h1 {
-    font-weight: 500;
-}
-
+#summer>h1,
 #pack>h2 {
     font-weight: 500;
-    margin-left: 40px;
-}
-
-#loc {
-    height: 20px;
-    margin-left: 10px;
-}
-
-#arrow {
-    height: 17px;
-    width: 17px;
-}
-
-.arr {
-    border-radius: 100%;
-    height: 27px;
-    width: 30px;
-    border: 1px solid grey;
-    background-color: white;
-    margin-left: -15px;
-    margin-right: -12px;
-    margin-top: 6px;
-}
-
-.loca2,
-.loca1 {
-    width: 380px;
-    height: 40px;
-    text-align: start;
-    background-color: white;
-    border: 0.5px solid black;
-    border-radius: 10px;
-    margin-left: -5px;
-}
-
-.loca1 {
-    margin-left: 40px;
 }
 
 #selected1 {
-    width: 90px;
-    height: 30px;
-    border-radius: 30px;
-    background-color: #BECDF8;
     margin-left: 40px;
 }
 
-#selected2 {
+#selected2,
+#selected1,
+#car {
     width: 90px;
     height: 30px;
     border-radius: 30px;
     background-color: #BECDF8;
+    font-size: 14px;
 }
 
 #car {
-    width: 80px;
-    height: 30px;
-    border-radius: 30px;
-    border: 1px solid gray;
     background-color: white;
 }
 
@@ -115,6 +64,10 @@
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+#selectTag {
+    font-size: 20px;
 }
 
 #search {
@@ -160,12 +113,18 @@
 
 }
 
-#box-1>div>img {
+#box-1>div>img,
+#box-2>div>div:nth-child(1)>img,
+#grid-2>div>img,
+#qr-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+#box-1>div>img {
+    height: 100%;
+    object-fit: cover;
 }
 
 #box-1>div:nth-child(2) {
@@ -178,7 +137,6 @@
 }
 
 #box-2 {
-
     width: 29%;
     display: flex;
     flex-direction: column;
@@ -193,24 +151,13 @@
     border-radius: 10px;
 }
 
-#box-2>div:nth-child(2) {
-    border: 0.5px solid rgb(198, 195, 195);
-    height: 45%;
-    width: 100%;
-    border-radius: 10px;
-}
-
 #box-2>div>div:nth-child(1) {
     width: 40%;
     height: 100%;
-
 }
 
 #box-2>div>div:nth-child(1)>img {
     height: 100%;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 #box-2>div>div:nth-child(2) {
@@ -220,16 +167,10 @@
     height: 100%;
 }
 
-#box-2>div>div:nth-child(2)>p {
-    margin-top: 20px;
-    margin-left: 10px;
-
-}
-
+#box-2>div>div:nth-child(2)>p,
 #box-2>div>div:nth-child(2)>h3 {
     margin-top: 20px;
     margin-left: 10px;
-
 }
 
 #box-2-div-2 {
@@ -241,27 +182,20 @@
     height: 100%;
 }
 
-
-
 #grid {
     margin-top: 30px;
     display: grid;
     display: flex;
     gap: 18px;
-
     height: 180px;
     grid-template-columns: repeat(6, 20%);
 }
 
 #grid>div {
-
     width: 15%;
     border: 0.5px solid rgb(198, 195, 195);
     border-radius: 5px;
     background: black;
-
-
-
 }
 
 #grid>div>img {
@@ -269,7 +203,6 @@
     border-radius: 5px;
     height: 100%;
     opacity: 50%;
-
 }
 
 #grid>div>p {
@@ -286,7 +219,6 @@
     display: flex;
     margin-left: 40px;
     height: max-content;
-
 }
 
 #grid-2>div:nth-child(2) {
@@ -298,15 +230,8 @@
     border-radius: 10px;
     border: 0.5px solid rgb(198, 195, 195);
     grid-template-columns: repeat(3, 1fr);
-
     height: 100%;
     width: 31%;
-}
-
-#grid-2>div>img {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 #grid-2>div>h4 {
@@ -333,19 +258,18 @@
 
 #grid-3>div {
     grid-template-columns: repeat(2, 1fr);
-
     width: 50%;
     margin-right: 5px;
 }
 
 #grid-3>div>h5 {
     color: #343b53;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 #grid-3>div>p {
     color: #343b53;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 #img-2 {
@@ -353,6 +277,7 @@
     width: 100%;
     margin: auto;
     margin-top: 40px;
+    border: 2px solid crimson;
 }
 
 #explore>div {
@@ -433,10 +358,7 @@
 }
 
 #qr-img {
-    width: 100%;
-    height: 300px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    height: 100%;
 }
 
 #qr>div>h1 {
@@ -508,15 +430,12 @@
 
 #footer {
     display: flex;
-    gap: 50px;
+    gap: 150px;
     width: 92%;
     margin: auto;
     border-bottom: 1px solid rgb(194, 194, 194);
     padding-bottom: 20px;
-}
-
-#footer>img {
-    margin-top: -210px;
+    margin-left: 40px;
 }
 
 #footer ul li {
@@ -524,10 +443,15 @@
     margin-top: 10px;
 }
 
+#footerImg > img {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
 #footer ul li a {
     text-decoration: none;
     color: blue;
-    font-size: 13px;
+    font-size: 18px;
 }
 
 #footer>div>p {
@@ -546,7 +470,7 @@
     margin-bottom: 7px;
     color: gray;
 }
-
+ 
 
 #sear {
     margin-top: 20px;
@@ -563,13 +487,13 @@
 
 .input-out3 {
     height: 50px;
-    width: 160px;
+    width: 300px;
     border: 1px solid black;
     padding-left: 50px;
     border-radius: 10px;
     margin-top: 30px;
     margin-left: 30px;
-    font-size: 13px;
+    font-size: 20px;
     color: black;
 
 }
@@ -617,12 +541,15 @@
     font-weight: lighter;
 }
 
-.logo-out, .logo-out1 {
+.logo-out,
+.logo-out1 {
     position: absolute;
     margin-top: 40px;
     padding-left: 50px;
     font-size: 20px;
 }
+
+
 
 #box1 {
     display: flex;
@@ -632,8 +559,51 @@
     display: flex;
 }
 
-#selectTag{
+#selectTag {
     margin-left: 50%;
     border: none;
     color: blue;
+}
+
+
+
+
+
+
+
+/* other */
+#loc {
+    height: 20px;
+    margin-left: 10px;
+}
+
+#arrow {
+    height: 17px;
+    width: 17px;
+}
+
+.arr {
+    border-radius: 100%;
+    height: 27px;
+    width: 30px;
+    border: 1px solid grey;
+    background-color: white;
+    margin-left: -15px;
+    margin-right: -12px;
+    margin-top: 6px;
+}
+
+.loca2,
+.loca1 {
+    width: 380px;
+    height: 40px;
+    text-align: start;
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    margin-left: -5px;
+}
+
+.loca1 {
+    margin-left: 40px;
 }
