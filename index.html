@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar - expedia</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Expedia Travel: Vacations, Cheap Price</title>
+    <link rel="stylesheet" href="Landing Page/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8ed00984e1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
     <div id="navbar">
         <nav>
             <div id="logo">
-                <img src="images/logo.svg" alt="logo">
+                <img src="Landing Page/images/logo.svg" alt="logo">
             </div>
 
             <div class="dropdown">
@@ -81,7 +81,6 @@
                 <button>Save</button>
             </form>
         </div>
-        
     </div>
 
     <div id="mid">
@@ -94,19 +93,108 @@
                 <button onclick="showDiv('child5')">Things to do</button>
             </div>
             <div id="child1" >
-                This is Stays
+                <div id="input_div">
+                    <div id="input_location_div">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                    <input type="text" id="input_location" placeholder="Going to" >
+                    </div>
+                    <div id="input_date_div">
+                    <p><i class="fa-solid fa-calendar-days"></i></p>
+                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="input_date"/>
+                    </div>
+                    <div id="input_count_div">
+                    <p><i class="fa-solid fa-user"></i></p>
+                    <input type="text" id="input_count" placeholder="Travellers"  onclick="showPayModal()">
+                    </div>
+                    <div id="input_button_id_div">
+                    <button id="input_button_id"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
             </div>
             <div id="child2" style="display:none">
-                This is Flights
+                <div>
+                    <button>Return</button>
+                    <button>One-way</button>
+                    <button>Multi-city</button>
+                </div>
+                <div id="input_div">
+                    <div id="input_location_div">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                    <input type="text" id="input_location" placeholder="Going to" >
+                    </div>
+                    <div id="input_date_div">
+                    <p><i class="fa-solid fa-calendar-days"></i></p>
+                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="input_date"/>
+                    </div>
+                    <div id="input_count_div">
+                    <p><i class="fa-solid fa-user"></i></p>
+                    <input type="text" id="input_count" placeholder="Travellers"  onclick="showPayModal()">
+                    </div>
+                    <div id="input_button_id_div">
+                    <button id="input_button_id"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
             </div>
             <div id="child3" style="display:none">
-                This is Cars
+                <div>
+                    <button>Car hire</button>
+                    <button>Airport-transoprt</button>
+                </div>
+                <div id="input_div">
+                    <div id="input_location_div">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                    <input type="text" id="input_location" placeholder="Going to" >
+                    </div>
+                    <div id="input_date_div">
+                    <p><i class="fa-solid fa-calendar-days"></i></p>
+                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="input_date"/>
+                    </div>
+                    <div id="input_count_div">
+                    <p><i class="fa-solid fa-user"></i></p>
+                    <input type="text" id="input_count" placeholder="Travellers"  onclick="showPayModal()">
+                    </div>
+                    <div id="input_button_id_div">
+                    <button id="input_button_id"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
             </div>
             <div id="child4" style="display:none">
-                This is Packages
+                <div id="input_div">
+                    <div id="input_location_div">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                    <input type="text" id="input_location" placeholder="Going to" >
+                    </div>
+                    <div id="input_date_div">
+                    <p><i class="fa-solid fa-calendar-days"></i></p>
+                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="input_date"/>
+                    </div>
+                    <div id="input_count_div">
+                    <p><i class="fa-solid fa-user"></i></p>
+                    <input type="text" id="input_count" placeholder="Travellers"  onclick="showPayModal()">
+                    </div>
+                    <div id="input_button_id_div">
+                    <button id="input_button_id"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
             </div>
             <div id="child5" style="display:none">
-                This is 'Things to do'
+                <div id="input_div">
+                    <div id="input_location_div">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                    <input type="text" id="input_location" placeholder="Going to" >
+                    </div>
+                    <div id="input_date_div">
+                    <p><i class="fa-solid fa-calendar-days"></i></p>
+                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="input_date"/>
+                    </div>
+                    <div id="input_count_div">
+                    <p><i class="fa-solid fa-user"></i></p>
+                    <input type="text" id="input_count" placeholder="Travellers"  onclick="showPayModal()">
+                    </div>
+                    <div id="input_button_id_div">
+                    <button id="input_button_id"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
         <div>
@@ -123,7 +211,7 @@
         </div>
         <div>
             <div>
-                <img src="images/BEX_ROME_iStock_72dpi.webp" alt="ROME">
+                <img src="Landing Page/images/BEX_ROME_iStock_72dpi.webp" alt="ROME">
             </div>
             <div>
                 <div>
@@ -132,7 +220,7 @@
                     <h4>Scan the QR code with your device camera and download our app</h4>
                 </div>
                 <div>
-                    <img src="images/BEX-HP-CONTROL-27.webp" alt="barcode">
+                    <img src="Landing Page/images/BEX-HP-CONTROL-27.webp" alt="barcode">
                 </div>
             </div>
         </div>
@@ -148,7 +236,7 @@
 
     <div id="footer">
         <div>
-            <img src="images/EG_Wordmark_blue_RGB.svg" alt="EG">
+            <img src="Landing Page/images/EG_Wordmark_blue_RGB.svg" alt="EG">
         </div>
         <div>
             <div>
@@ -185,11 +273,11 @@
             </div>
         </div>
         <div>
-            <img src="images/secure.png" alt="secure">
+            <img src="Landing Page/images/secure.png" alt="secure">
             <p>© 2023 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="Landing Page/index.js"></script>
 </body>
 </html>
