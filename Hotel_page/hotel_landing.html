@@ -18,13 +18,14 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!--  for two dates -->
     <!-- navbar bootstrap dropdown -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- navbar bootstrap dropdown -->
     <title>Hello, world!</title>
 </head>
 
 <body>
-    
+
     <!-- my code starts -->
     <!-- we have to import navbar here -->
     <div id="navbar">
@@ -34,25 +35,27 @@
             </div>
 
             <div class="dropdown">
-                <button class="btn bg-white btn-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  More travel
+                <button class="btn bg-white btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    More travel
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-hotel"></i> Stays</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plane"></i>  Flights</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-car"></i> Cars</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-person-walking-luggage"></i> Packages</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-ticket"></i> Holiday Activities</a></li>
-                  <li><a class="dropdown-item" href="#">Deals</a></li>
-                  <li><a class="dropdown-item" href="#">Groups & Meetings</a></li>
-                  <li><a class="dropdown-item" href="#">Mobile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-hotel"></i> Stays</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plane"></i> Flights</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-car"></i> Cars</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-person-walking-luggage"></i>
+                            Packages</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-ticket"></i> Holiday Activities</a></li>
+                    <li><a class="dropdown-item" href="#">Deals</a></li>
+                    <li><a class="dropdown-item" href="#">Groups & Meetings</a></li>
+                    <li><a class="dropdown-item" href="#">Mobile</a></li>
                 </ul>
             </div>
 
             <div id="rightDiv">
                 <ul>
                     <li id="popup" onclick="showModal()">
-                        <a href="#" ><i class="fa-solid fa-globe"></i>English</a>
+                        <a href="#"><i class="fa-solid fa-globe"></i>English</a>
                     </li>
                     <li>
                         <a href="#">Support</a>
@@ -77,7 +80,9 @@
             </div>
             <div>
                 <i class="fa-solid fa-circle-info"></i><br>
-                <br><p> You can only access your trip information and Expedia Rewards points from the Expedia site you booked on.</p>
+                <br>
+                <p> You can only access your trip information and Expedia Rewards points from the Expedia site you
+                    booked on.</p>
             </div>
             <form action="">
                 <select name="" id="region">
@@ -108,22 +113,22 @@
     </div> -->
     <div id="input_div">
         <div id="input_location_div">
-          <p><i class="fa-solid fa-location-dot"></i></p>
-        <input type="text" id="input_location" placeholder="Going to" >
-      </div>
-      <div id="input_date_div">
-        <p><i class="fa-solid fa-calendar-days"></i></p>
-        <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="input_date"/>
-      </div>
-      <div id="input_count_div">
-        <p><i class="fa-solid fa-user"></i></p>
-        <input type="text" id="input_count" placeholder="Travellers"  onclick="showPayModal()">
-      </div>
-      <div id="input_button_id_div">
-        <button id="input_button_id"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>
-      </div>
-    
+            <p><i class="fa-solid fa-location-dot"></i></p>
+            <input type="text" id="input_location" placeholder="Going to">
+        </div>
+        <div id="input_date_div">
+            <p><i class="fa-solid fa-calendar-days"></i></p>
+            <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="input_date" />
+        </div>
+        <div id="input_count_div">
+            <p><i class="fa-solid fa-user"></i></p>
+            <input type="text" id="input_count" placeholder="Travellers" onclick="showPayModal()">
+        </div>
+        <div id="input_button_id_div">
+            <button id="input_button_id"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
     <!-- faizan start -->
     <div class="overlay"></div>
 
@@ -131,7 +136,7 @@
         <p id="traveller">Travellers</p>
         <div id="adults_parent">
             <div id="adults_div">Adults</div>
-            <div id="adults_parent_1"> 
+            <div id="adults_parent_1">
                 <div id="adults_parent_2">-</div>
                 <div id="adults_parent_3">0</div>
                 <div id="adults_parent_4">+</div>
@@ -140,14 +145,15 @@
         <div id="children_parent">
             <div id="children_div_1">Children</div>
             <div id="parent_cont">
-            <div id="children_div_2">-</div>
+                <div id="children_div_2">-</div>
                 <div id="children_div_3">0</div>
-                <div id="children_div_4">+</div> </div>
+                <div id="children_div_4">+</div>
             </div>
-                <button id="cross_tag">Done</button>
+        </div>
+        <button id="cross_tag">Done</button>
     </div>
     <!-- faizan end -->
-         
+
 
 
     <p id="ideas_text">Ideas for your next trip</p>
@@ -195,7 +201,8 @@
             <p id="qr_main_div_2_p1">Go further with the Expedia app</p>
             <p id="qr_main_div_2_p2">Save even more - get up to 20% on select hotels and earn double the points when
                 <br> you book on the app. Our app deals help you to save on
-                trips so you can travel <br> more and manage it all on the go.</p>
+                trips so you can travel <br> more and manage it all on the go.
+            </p>
             <p id="qr_main_div_2_p3">Scan the QR code with your device camera and download our app</p>
         </div>
         <div id="qr_main_div_3">
@@ -234,7 +241,8 @@
                 <br> hotels available. You can add additional search filters to sort your results even further <br>
                 whether you're looking for a cheap hotel room or you want to splurge on something more <br> luxurious.
                 You'll find Hotels in Mumbai, Hotels in Delhi and Hotels in Bangalore among <br> countless others across
-                the world. </p>
+                the world.
+            </p>
         </div>
         <div>
             <p id="writing_main_div_p1">How can I find some of the best deals on hotels?</p>
@@ -262,7 +270,8 @@
                 can<br> book a flight as well. You may even find additional discounts by booking your hotel and
                 <br>flight together. Additionally, you can become a member and enjoy extra hotel discounts<br> you
                 wouldn't be able to enjoy otherwise. Becoming a member is completely free, so there's <br>no barrier to
-                entry that comes with it.</p>
+                entry that comes with it.
+            </p>
         </div>
         <div>
             <p id="writing_main_div_p1">How far in advance should I book a hotel?</p>
@@ -278,7 +287,8 @@
             <p id="writing_main_div_p2">Some hotels on Expedia do offer flexible cancellation policies. You'll be able
                 to see which <br> ones do on your search results page because they'll be labelled as such in green text.
                 Of<br> course, you can always implement the 'fully refundable' search filter to only show results
-                <br>that offer this enticing feature.</p>
+                <br>that offer this enticing feature.
+            </p>
         </div>
     </div>
 
@@ -299,67 +309,70 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-<!-- for dates -->
-<script>$(function() {
-    $('input[name="daterange"]').daterangepicker({
-      opens: 'left'
-    }, function(start, end, label) {
-      console.log("A new date selection was made: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
-    });
-  });</script>
+    <!-- for dates -->
+    <script>$(function () {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left'
+            }, function (start, end, label) {
+                console.log("A new date selection was made: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
+            });
+        });</script>
 
 
-<!-- navbar dropdown -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<!-- navbar dropdown -->
+    <!-- navbar dropdown -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- navbar dropdown -->
 
-<!-- footer start here -->
-<div id="footer">
-    <div>
-        <img src="expedia_group.svg" alt="EG">
+    <!-- footer start here -->
+    <div id="footer">
+        <div>
+            <img src="expedia_group.svg" alt="EG">
+        </div>
+        <div>
+            <div>
+                <h4>Company</h4>
+                <p>About Us</p>
+                <p>Jobs</p>
+                <p>List your property</p>
+                <p>Partnerships</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p>India travel guide</p>
+                <p>Hotels in India</p>
+                <p>Holiday rentals in India</p>
+                <p>Holiday packages in India</p>
+                <p>Domestic flights</p>
+                <p>Car hire in India</p>
+                <p>All accommodation types</p>
+                <p>Travel blog</p>
+            </div>
+            <div>
+                <h4>Policies</h4>
+                <p>Privacy Statement</p>
+                <p>Terms of use</p>
+                <p>Vrbo terms and conditions</p>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <p>Support</p>
+                <p>Change or cancel your booking</p>
+                <p>Refund process and timelines</p>
+                <p>Book a flight using an airline credit</p>
+                <p>International travel documents</p>
+            </div>
+        </div>
+        <div>
+            <img src="secure.png" alt="secure">
+            <p>© 2023 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are
+                trademarks or registered trademarks of Expedia, Inc.</p>
+        </div>
     </div>
-    <div>
-        <div>
-            <h4>Company</h4>
-            <p>About Us</p>
-            <p>Jobs</p>
-            <p>List your property</p>
-            <p>Partnerships</p>
-        </div>
-        <div>
-            <h4>Explore</h4>
-            <p>India travel guide</p>
-            <p>Hotels in India</p>
-            <p>Holiday rentals in India</p>
-            <p>Holiday packages in India</p>
-            <p>Domestic flights</p>
-            <p>Car hire in India</p>
-            <p>All accommodation types</p>
-            <p>Travel blog</p>
-        </div>
-        <div>
-            <h4>Policies</h4>
-            <p>Privacy Statement</p>
-            <p>Terms of use</p>
-            <p>Vrbo terms and conditions</p>
-        </div>
-        <div>
-            <h4>Help</h4>
-            <p>Support</p>
-            <p>Change or cancel your booking</p>
-            <p>Refund process and timelines</p>
-            <p>Book a flight using an airline credit</p>
-            <p>International travel documents</p>
-        </div>
-    </div>
-    <div>
-        <img src="secure.png" alt="secure">
-        <p>© 2023 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
-    </div>
-</div>
-<!-- footer end here -->
+    <!-- footer end here -->
 
-    </body>
+</body>
 
 </html>
 
