@@ -1,5 +1,5 @@
 /* navbar css start */
-#navbar > nav{
+#navbar>nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,29 +9,30 @@
     font-family: 'Inter', sans-serif;
 }
 
-.dropdown{
+.dropdown {
     /* border: 1px solid ; */
     display: flex;
     width: 50%;
     justify-content: flex-start;
 }
 
-.dropdown > button {
+.dropdown>button {
     background-color: white;
-    color:#343B53;
+    color: #343B53;
     border: none;
 }
-.dropdown > button:hover{
+
+.dropdown>button:hover {
     background-color: white;
-    color: rgb(54,98,216);
+    color: rgb(54, 98, 216);
 }
 
-.dropdown > button:focus{
+.dropdown>button:focus {
     background-color: white;
-    color: rgb(54,98,216);
+    color: rgb(54, 98, 216);
 }
 
-.dropdown > .dropdown-menu{
+.dropdown>.dropdown-menu {
     /* display: flex; */
     width: 60%;
     height: 60vh;
@@ -41,27 +42,28 @@
     overflow: hidden;
 }
 
-.dropdown > .dropdown-menu > li{
+.dropdown>.dropdown-menu>li {
     color: #525a75;
     padding: 0.58em 1em;
 }
 
-.dropdown > .dropdown-menu > li a i{
+.dropdown>.dropdown-menu>li a i {
     padding-right: 10px;
     font-size: 20px;
     color: #525a75;
 }
 
-#navbar > nav a:hover{
-    color: rgb(54,98,216);
+#navbar>nav a:hover {
+    color: rgb(54, 98, 216);
 }
 
-#rightDiv{
+#rightDiv {
     display: flex;
     align-items: center;
     margin-top: 1em;
 }
-#rightDiv > ul{
+
+#rightDiv>ul {
     display: flex;
     justify-content: flex-end;
     /* align-items: center; */
@@ -69,26 +71,26 @@
     font-family: 'Inter', sans-serif;
 }
 
-#rightDiv > ul > li a{
+#rightDiv>ul>li a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     text-decoration: none;
-    color:#343B53;
+    color: #343B53;
     font-weight: 580;
     padding: 0 18px;
     font-family: 'Inter', sans-serif;
 }
 
-#rightDiv ul li:first-child a i{
+#rightDiv ul li:first-child a i {
     margin: 0 10px;
 }
 
-#rightDiv ul li:nth-child(4) a i{
+#rightDiv ul li:nth-child(4) a i {
     font-size: 22px;
 }
 
-#rightDiv > ul > li > a > i{
+#rightDiv>ul>li>a>i {
     font-size: 18px;
 }
 
@@ -99,7 +101,7 @@
 
 /* Overlay */
 
-.overlay{
+.overlay {
     position: fixed;
     top: 0;
     width: 100%;
@@ -110,12 +112,12 @@
     transition: 0.2s;
 }
 
-.showOverlay{
+.showOverlay {
     opacity: 1;
     z-index: 1;
 }
 
-.lang{
+.lang {
     width: 35%;
     padding: 20px 0;
     border-radius: 10px;
@@ -124,16 +126,16 @@
     position: absolute;
     top: -70%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: 0.5s;
     z-index: 9;
 }
 
-.showlang{
+.showlang {
     top: 50%;
 }
 
-.lang span{
+.lang span {
     position: absolute;
     left: 0.5em;
     top: 0.5em;
@@ -145,7 +147,7 @@
     cursor: pointer;
 }
 
-.lang > div:nth-child(2){
+.lang>div:nth-child(2) {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -157,17 +159,17 @@
     padding: 0 1em;
 }
 
-.lang > div:nth-child(2) p {
+.lang>div:nth-child(2) p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 
-.lang form{
+.lang form {
     padding: 0 1.8em;
 }
 
-.lang select{
+.lang select {
     width: 100%;
     height: 3em;
     padding: 0 0.5em;
@@ -175,8 +177,8 @@
     margin-bottom: 15px;
 }
 
-.lang button{
-    background-color: rgb(54,98,216);
+.lang button {
+    background-color: rgb(54, 98, 216);
     color: white;
     width: 100%;
     height: 35px;
@@ -186,6 +188,7 @@
     height: 2.8em;
     font-size: 1.2em;
 }
+
 /* navbar css end */
 
 
@@ -318,6 +321,7 @@
     height: 328px;
     margin-top: 10px;
 }
+
 #explore_ptag {
     font-weight: 500;
     font-size: 32px;
@@ -326,6 +330,7 @@
     margin-left: 10%;
     margin-top: 30px;
 }
+
 #discover_and_save img {
     width: 100%;
     height: 100%;
@@ -423,38 +428,42 @@
 /* search css start */
 #input_div {
     display: flex;
+    justify-content: center;
     width: 70%;
     margin: auto;
     height: 60px;
     margin-bottom: 55px;
     margin-top: 50px;
     gap: 25px;
-    /* border: 2px solid red; */
 }
+
 #input_location_div {
     width: 28%;
     display: flex;
     align-items: center;
-   cursor: pointer;
+    cursor: pointer;
     border-radius: 15px;
     height: 50px;
     padding: 10px;
     border: 1px solid grey;
 }
-#input_location_div > p{
+
+#input_location_div>p {
     font-size: 25px;
     margin-top: 6px;
     margin-right: 15px;
-   /* margin-left: 20px; */
+    /* margin-left: 20px; */
 }
-#input_location_div input{
-   width: 100%;
-   padding: 10px 0px ;
-   cursor: pointer;
-   /* padding-left: 80px; */
-   border: none;
-   outline: none;
+
+#input_location_div input {
+    width: 100%;
+    padding: 10px 0px;
+    cursor: pointer;
+    /* padding-left: 80px; */
+    border: none;
+    outline: none;
 }
+
 #input_date_div {
     width: 28%;
     display: flex;
@@ -465,18 +474,35 @@
     margin-left: -30px;
 
 }
-#input_location_div{
-margin-right: 30px;
+
+#input_location_div {
+    margin-right: 30px;
 }
+
+#input_location_div>p {
+    margin-left: 10px;
+}
+
+#input_location_div>p:hover {
+    color: blue;
+}
+
 #input_count_div {
     width: 28%;
-    display: flex;   
+    display: flex;
     padding: 0px 90px;
     border-radius: 15px;
     height: 50px;
     border: 1px solid grey;
 }
-#input_button_id{
+#input_count_div > p {
+   cursor: pointer;
+}
+#input_count_div > p:hover {
+    color: blue;
+
+ }
+#input_button_id {
     width: 50px;
     height: 50px;
     color: white;
@@ -485,31 +511,37 @@ margin-right: 30px;
     border: none;
     font-weight: 600;
 }
+
 /*  */
-#input_date_div{
+#input_date_div {
     width: 28%;
     display: flex;
     align-items: center;
-
     border-radius: 15px;
     height: 50px;
     padding: 10px;
     border: 1px solid grey;
 }
-#input_date_div > p{
+
+#input_date_div>p {
     font-size: 25px;
     margin-top: 12px;
     margin-right: 15px;
     margin-left: 10px;
+    cursor: pointer;
 }
-#input_date_div input{
+#input_date_div > p:hover {
+   color: blue;
+}
+#input_date_div input {
     width: 100%;
-    padding: 10px 0px ;
+    padding: 10px 0px;
     cursor: pointer;
     border: none;
     outline: none;
 }
-#input_count_div{
+
+#input_count_div {
     width: 28%;
     display: flex;
     align-items: center;
@@ -519,19 +551,22 @@ margin-right: 30px;
     padding: 10px;
     border: 1px solid grey;
 }
-#input_count_div > p{
+
+#input_count_div>p {
     font-size: 25px;
     margin-top: 12px;
     margin-right: 15px;
     margin-left: 10px;
 }
+
 #input_count_div input {
     width: 100%;
-    padding: 10px 0px ;
+    padding: 10px 0px;
     cursor: pointer;
     border: none;
     outline: none;
 }
+
 /* popup css start*/
 
 
@@ -575,6 +610,7 @@ margin-right: 30px;
     justify-content: space-between;
     padding: 15px;
 }
+
 #adults_parent_1 {
     display: flex;
     justify-content: space-evenly;
@@ -592,14 +628,17 @@ margin-right: 30px;
     border: 1px solid black;
     cursor: pointer;
 }
-#adults_parent_2:hover{
+
+#adults_parent_2:hover {
     color: white;
-    background-color: #001959;
+    background-color: blue;
 }
-#adults_parent_4:hover{
+
+#adults_parent_4:hover {
     color: white;
-    background-color: #001959;
+    background-color: blue;
 }
+
 #adults_parent_4 {
     width: 35px;
     height: 35px;
@@ -639,27 +678,31 @@ margin-right: 30px;
     Color: rgb(52, 59, 83);
     margin-top: 7px;
 }
+
 #children_parent {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#children_div_1{
+
+#children_div_1 {
     font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     Color: rgb(52, 59, 83);
     margin-top: -5px;
-    padding: 22px;  
+    padding: 22px;
 }
-#parent_cont{
+
+#parent_cont {
     display: flex;
     justify-content: space-evenly;
     width: 170px;
     margin-right: 15px;
 }
-#children_div_2{
+
+#children_div_2 {
     width: 35px;
     height: 35px;
     display: flex;
@@ -669,12 +712,14 @@ margin-right: 30px;
     border: 1px solid black;
     cursor: pointer;
 }
-#children_div_3{
+
+#children_div_3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#children_div_4{
+
+#children_div_4 {
     width: 35px;
     height: 35px;
     display: flex;
@@ -684,32 +729,36 @@ margin-right: 30px;
     border-radius: 50%;
     cursor: pointer;
 }
-#children_div_2:hover{
+
+#children_div_2:hover {
     color: white;
-    background-color: #001959;
+    background-color:blue;
 }
-#children_div_4:hover{
+
+#children_div_4:hover {
     color: white;
-    background-color: #001959;
+    background-color: blue;
 }
+
 #cross_tag {
     padding: 8px 140px;
     border-radius: 19px;
     margin-left: 19px;
     margin-top: 40px;
-    background-color: rgb(54,98,215);
+    background-color: rgb(54, 98, 215);
     color: white;
     border: none;
     font-size: 20px;
     cursor: pointer;
 }
-#cross_tag:hover{
-background-color: blue;
+
+#cross_tag:hover {
+    background-color: blue;
 }
 
 
 /* foooter css start */
-#footer{
+#footer {
     /* border: 1px solid black; */
     width: 80%;
     margin: auto;
@@ -717,38 +766,40 @@ background-color: blue;
     margin-top: 3rem;
 }
 
-#footer > div:nth-child(2){
+#footer>div:nth-child(2) {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-#footer > div:nth-child(2) > div{
+#footer>div:nth-child(2)>div {
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
 }
 
-#footer > div:nth-child(2) > div h4{
+#footer>div:nth-child(2)>div h4 {
     color: #343B53;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
 }
-    
-#footer > div:nth-child(2) > div p{
-    color: rgb(54,98,216);
+
+#footer>div:nth-child(2)>div p {
+    color: rgb(54, 98, 216);
     font-family: 'Inter', sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
 }
 
-#footer > div:last-child{
+#footer>div:last-child {
     padding-top: 3rem;
     border-top: 0.5px solid rgb(177, 175, 175);
 }
-#footer > div:last-child p{
+
+#footer>div:last-child p {
     font-size: 0.8em;
     font-family: 'Inter', sans-serif;
 }
+
 /* foooter css end */
 /* popup css end */
 /* search css end */

@@ -2650,7 +2650,7 @@ function rating_func_htl(){
 
   // Search Functionality
 // popup
-  document.getElementById("input_count").addEventListener("click", showPayModal);
+  document.getElementById("input_p_count").addEventListener("click", showPayModal);
   function showPayModal(){
       document.querySelector(".overlay").classList.add("showOverlay");
       document.querySelector(".reserve").classList.add("showReserve");
@@ -2664,18 +2664,18 @@ function rating_func_htl(){
   }
     
      // pop js
-document.getElementById("input_count").addEventListener("click", showPayModal);
-function showPayModal(){
-    document.querySelector(".overlay").classList.add("showOverlay");
-    document.querySelector(".reserve").classList.add("showReserve");
-}
+// document.getElementById("input_count").addEventListener("click", showPayModal);
+// function showPayModal(){
+//     document.querySelector(".overlay").classList.add("showOverlay");
+//     document.querySelector(".reserve").classList.add("showReserve");
+// }
 
-// document.querySelector("#cross_tag").addEventListener("click", closePayModal);
-document.getElementById("cross_tag").addEventListener("click", closePayModal)
-function closePayModal(){
-    document.querySelector(".overlay").classList.remove("showOverlay");
-    document.querySelector(".reserve").classList.remove("showReserve");
-}
+// // document.querySelector("#cross_tag").addEventListener("click", closePayModal);
+// document.getElementById("cross_tag").addEventListener("click", closePayModal)
+// function closePayModal(){
+//     document.querySelector(".overlay").classList.remove("showOverlay");
+//     document.querySelector(".reserve").classList.remove("showReserve");
+// }
 var ccount = 0;
 document.getElementById("adults_parent_2").addEventListener("click", fun_sub);
 document.getElementById("adults_parent_4").addEventListener("click", fun_add);

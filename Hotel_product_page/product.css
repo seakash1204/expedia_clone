@@ -1,4 +1,11 @@
+#universal_last_div{
+    background-color: rgb(245, 239, 239);
+   z-index: -1;
+  }
 /* navbar css start here */
+#navbar{
+    background-color: white;
+}
    #navbar > nav{
     display: flex;
     justify-content: space-between;
@@ -292,12 +299,20 @@ body {
     height: 50px;
     padding: 10px;
     border: 1px solid grey;
+    background-color: white;
 }
 #input_location_div > p{
     font-size: 25px;
     margin-top: 6px;
     margin-right: 15px;
-   /* margin-left: 20px; */
+   margin-left: 10px;
+   cursor: pointer;
+}
+#div1_id{
+  cursor: pointer;
+}
+#input_location_div > p:hover{
+    color: blue;
 }
 #input_location_div input{
    width: 100%;
@@ -314,7 +329,13 @@ body {
     border-radius: 15px;
     height: 50px;
     border: 1px solid grey;
-
+    background-color: white;
+}
+#input_date_div > p{
+    cursor: pointer;
+}
+#input_date_div > p:hover{
+   color: blue;
 }
 #input_location_div{
 margin-right: 30px;
@@ -326,6 +347,13 @@ margin-right: 30px;
     border-radius: 15px;
     height: 50px;
     border: 1px solid grey;
+    background-color: white;
+}
+#input_count_div > p{
+    cursor: pointer;
+}
+#input_count_div > p:hover{
+    color: blue;
 }
 #input_button_id{
     width: 50px;
