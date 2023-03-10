@@ -2637,52 +2637,7 @@ function rating_func_htl(){
   }
   display_data(brr);
 }
-// rating sorting code;
-// ///////
 
-// function fun_refund () {
-//   let checkBox = document.getElementById("flexCheckDefault12");
-//   if (checkBox.checked == true){
-   
-//   }
-// }
-// function fun_reserve () {
-//   let checkBox = document.getElementById("flexCheckChecked11");
-//   if (checkBox.checked == true){
-//     var filter_arr = brr.filter(function(ele){
-//        if(ele.text4 != ""){
-//               return true;
-//          }          
-//          })
-//   }
-//   display_data(filter_arr);
-// }
-// popup_box;
-// var filter_arr = appliedjob.filter(function(ele){
-//   if(selected_role == ""){
-//        return true;
-//    }
-//    else{
-//      return ele.role === selected_role;
-//    }            
-//    });               
-//          displayData(filter_arr);
-// }
-// POPUP FUNCTION
-$(document).ready(function() {
-  // Hide the popup box initially
-  $("#popupBox").hide();
-
-  // When the input box is clicked, show the popup box
-  $("#input_count").click(function() {
-    $("#popupBox").show();
-  });
-
-  // When the close button is clicked, hide the popup box
-  $("#closePopup").click(function() {
-    $("#popupBox").hide();
-  });
-});
 
 
 // MAP
@@ -2694,7 +2649,78 @@ $(document).ready(function() {
 
 
   // Search Functionality
+// popup
+  document.getElementById("input_count").addEventListener("click", showPayModal);
+  function showPayModal(){
+      document.querySelector(".overlay").classList.add("showOverlay");
+      document.querySelector(".reserve").classList.add("showReserve");
+  }
 
-
+  // document.querySelector("#cross_tag").addEventListener("click", closePayModal);
+  document.getElementById("cross_tag").addEventListener("click", closePayModal)
+ function closePayModal(){
+      document.querySelector(".overlay").classList.remove("showOverlay");
+      document.querySelector(".reserve").classList.remove("showReserve");
+  }
     
-     
+     // pop js
+document.getElementById("input_count").addEventListener("click", showPayModal);
+function showPayModal(){
+    document.querySelector(".overlay").classList.add("showOverlay");
+    document.querySelector(".reserve").classList.add("showReserve");
+}
+
+// document.querySelector("#cross_tag").addEventListener("click", closePayModal);
+document.getElementById("cross_tag").addEventListener("click", closePayModal)
+function closePayModal(){
+    document.querySelector(".overlay").classList.remove("showOverlay");
+    document.querySelector(".reserve").classList.remove("showReserve");
+}
+var ccount = 0;
+document.getElementById("adults_parent_2").addEventListener("click", fun_sub);
+document.getElementById("adults_parent_4").addEventListener("click", fun_add);
+// document.getElementById("adults_parent_2").addEventListener("click, fun_sub");
+// two dates
+function fun_sub(){
+  ccount--;
+    document.getElementById("adults_parent_3").innerHTML = ccount;
+}
+function fun_add(){
+  ccount++;
+    document.getElementById("adults_parent_3").innerHTML = ccount;
+}
+var bcount = 0;
+document.getElementById("children_div_2").addEventListener("click", fun_sub_chil);
+document.getElementById("children_div_4").addEventListener("click", fun_add_chil);
+
+function fun_sub_chil(){
+    bcount--;
+    document.getElementById("children_div_3").innerHTML = bcount;
+}
+function fun_add_chil(){
+    bcount++;
+    document.getElementById("children_div_3").innerHTML = bcount;
+}
+// document.getElementById("input_count").value
+document.getElementById("cross_tag").addEventListener("click", func_buttn);
+function func_buttn(){
+    document.getElementById("input_count").value = ccount + bcount;
+    ccount = 0;
+    bount = 0;
+    document.getElementById("children_div_3").innerHTML = 0;
+    document.getElementById("adults_parent_3").innerHTML = 0; 
+}
+
+// navbar js
+  document.getElementById("popup").addEventListener("click", showModal);
+  function showModal(){
+    document.querySelector(".overlay").classList.add("showOverlay");
+    document.querySelector(".lang").classList.add("showlang");
+}
+
+  document.querySelector("span").addEventListener("click", closeModal);
+  function closeModal(){
+    document.querySelector(".overlay").classList.remove("showOverlay");
+    document.querySelector(".lang").classList.remove("showlang");
+}
+// navbar js
