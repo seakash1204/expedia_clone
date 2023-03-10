@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar - expedia</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8ed00984e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="navbar">
+        <nav>
+            <div id="logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+
+            <div class="dropdown">
+                <button class="btn bg-white btn-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More travel
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-hotel"></i> Stays</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plane"></i>  Flights</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-car"></i> Cars</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-person-walking-luggage"></i> Packages</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-ticket"></i> Holiday Activities</a></li>
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                  <li><a class="dropdown-item" href="#">Groups & Meetings</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile</a></li>
+                </ul>
+            </div>
+
+            <div id="rightDiv">
+                <ul>
+                    <li id="popup" onclick="showModal()">
+                        <a href="#" ><i class="fa-solid fa-globe"></i>English</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Trips</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="overlay"></div>
+
+        <div class="lang">
+            <div>
+                <span><i class="fa-sharp fa-solid fa-xmark"></i></span>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-info"></i><br>
+                <br><p> You can only access your trip information and Expedia Rewards points from the Expedia site you booked on.</p>
+            </div>
+            <form action="">
+                <select name="" id="region">
+                    <option value="India">India</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                </select>
+
+                <select name="" id="language">
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                </select>
+                <button>Save</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <div id="mid">
+        <div class="searchDiv">
+            <div>
+                <button onclick="showDiv('child1')">Stays</button>
+                <button onclick="showDiv('child2')">Flights</button>
+                <button onclick="showDiv('child3')">Cars</button>
+                <button onclick="showDiv('child4')">Packages</button>
+                <button onclick="showDiv('child5')">Things to do</button>
+            </div>
+            <div id="child1" >
+                This is Stays
+            </div>
+            <div id="child2" style="display:none">
+                This is Flights
+            </div>
+            <div id="child3" style="display:none">
+                This is Cars
+            </div>
+            <div id="child4" style="display:none">
+                This is Packages
+            </div>
+            <div id="child5" style="display:none">
+                This is 'Things to do'
+            </div>
+        </div>
+        <div>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>Explore more in 2023. Soon you’ll be able to sign in and book with one account across Expedia, Hotels.com, and Vrbo.
+                <br><a href="#">Learn more</a></p>
+        </div>
+        <div>
+            <div>
+                <h3>Save instantly with Expedia Rewards</h3>
+                <p>You can enjoy access to perks like Member Prices, saving an average of 15% on thousands of hotels. Terms may apply.</p>
+                <button>See Member Prices</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/BEX_ROME_iStock_72dpi.webp" alt="ROME">
+            </div>
+            <div>
+                <div>
+                    <h2>Go further with the Expedia app</h2>
+                    <p>Save even more - get up to 20% on select hotels and earn double the points when you book on the app. Our app deals help you to save on trips so you can travel more and manage it all on the go.</p><br><br>
+                    <h4>Scan the QR code with your device camera and download our app</h4>
+                </div>
+                <div>
+                    <img src="images/BEX-HP-CONTROL-27.webp" alt="barcode">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Plan ahead and save</h3>
+            <p>Book 60 days in advance for 20% off select stays.</p>
+        </div>
+        <div>
+            <h4>Explore a world of travel with Expedia</h4>
+            <p>Discover new places and experiences</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div>
+            <img src="images/EG_Wordmark_blue_RGB.svg" alt="EG">
+        </div>
+        <div>
+            <div>
+                <h4>Company</h4>
+                <p>About Us</p>
+                <p>Jobs</p>
+                <p>List your property</p>
+                <p>Partnerships</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p>India travel guide</p>
+                <p>Hotels in India</p>
+                <p>Holiday rentals in India</p>
+                <p>Holiday packages in India</p>
+                <p>Domestic flights</p>
+                <p>Car hire in India</p>
+                <p>All accommodation types</p>
+                <p>Travel blog</p>
+            </div>
+            <div>
+                <h4>Policies</h4>
+                <p>Privacy Statement</p>
+                <p>Terms of use</p>
+                <p>Vrbo terms and conditions</p>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <p>Support</p>
+                <p>Change or cancel your booking</p>
+                <p>Refund process and timelines</p>
+                <p>Book a flight using an airline credit</p>
+                <p>International travel documents</p>
+            </div>
+        </div>
+        <div>
+            <img src="images/secure.png" alt="secure">
+            <p>© 2023 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
