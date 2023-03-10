@@ -9,14 +9,26 @@
     <script src="https://kit.fontawesome.com/3e0c0ed060.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background-color: white;
+            margin: 0px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial;
         }
         #top{
-            padding: 6px;
-            text-align: center;
-            border-bottom: 1px solid rgb(107, 105, 105);
-        }
+            padding: 9px 0px;
+  
+        text-align: center;
+        border-bottom: 1px solid rgb(107, 105, 105);
+        display: flex;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    }
+    #top >img{
+        margin: auto;
+        width: 10%;
+    }
+    #back{
+        margin-left:10px;
+        
+    }
+    
         #googlesign>p {
             font-size: 14px;
             line-height:16px;
@@ -146,7 +158,7 @@ margin: 20px 0px;
         }
         #mainBox{
             width: 30%;
-          margin: auto;
+            margin: auto;
             align-items: center;
             align-content: center;
         }
@@ -178,11 +190,11 @@ margin: 20px 0px;
 <body>
     <header>
         <div id="top">
-            <a href="">
+            <a id="back" href="signin.html"><i class="fa-solid fa-arrow-left-long"></i>
 
             </a>
             <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
-                alt="">
+                alt="" onclick=window.location.href="index.html">
         </div>
     </header>
     <div id="mainBox">
@@ -199,13 +211,14 @@ margin: 20px 0px;
             </button>
         <p>or</p>
         </div>
-        <form action="signUp">
+        <form action="">
         <input type="email" class= "signup" id="email" placeholder="Email address" required>
         <input type="text" class= "signup" id="name" placeholder="First name" required>
         <input type="text" class= "signup" id="surname" placeholder="Surname" required>
         <input type="password" class= "signup" minlength="8" maxlength="8" placeholder="Password" id="password" required>
-        <input type="checkbox" name="" class="chebx"> <span class="paracondi2">Keep me signed in</span>
         
+        <input type="checkbox" name="" class="chebx"> <span class="paracondi2">Keep me signed in</span>
+
         <p id="paracondi1">Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>
         <input type="checkbox"  name="" class="chebx"><span class="paracondi2">I'd like to receive travel deals, special offers and other information from Expedia via email.</span> 
         <p id="paracondi3">By creating an account, I agree to the Expedia  and  <span class="lastSpan">Terms and Conditions, Privacy Statement </span>
@@ -222,7 +235,7 @@ margin: 20px 0px;
         <div id="terms">
             <a  href="">Contact us</a>
             <a  href="">Expedia. Inc</a>
-            <a  href="">Delete Data</a>
+            <a  href="signin.html">Delete Data</a>
         </div>
     </div>
 </div>
@@ -238,7 +251,8 @@ margin: 20px 0px;
         window.location.href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&client_id=919023678118-cdrmliol1m0qorr1hm0oe877pnrd02rb.apps.googleusercontent.com&response_mode=query&scope=openid%20profile%20email&state=nTEMOXeNucNYtAVd6ZO5S3dw6U5jFzgE_RZbPPE35oY&nonce=p5Zty0XZ4kxC0Os22EoHcz6Qy-jN76zy14dnm3xIyb4&redirect_uri=https%3A%2F%2Fwww.expedia.co.in%2Feg-auth-svcs%2Fapi%2Fv1%2Foauth2%2Fcallback%2Fgoogle-web&service=lso&o2v=2&flowName=GeneralOAuthFlow";
     });
 
-    function submitAccount() {
+    function submitAccount(e) {
+        e.preventDefault();
         var name = document.querySelector("#name").value;
         console.log("name");
         var surname= document.querySelector("#surname").value;
@@ -275,7 +289,7 @@ margin: 20px 0px;
                 document.querySelector("#surname").value = "";
                 document.querySelector("#password").value = "";
                 alert("your Account is created successfully");
-                window.location.href = "signin.html";
+                window.location.href = "./signin.html";
                  }
                 }
 

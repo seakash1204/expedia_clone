@@ -8,14 +8,23 @@
     <title>Sign In</title>
     <script src="https://kit.fontawesome.com/3e0c0ed060.js" crossorigin="anonymous"></script>
     <style>
-          body {
-            background-color: white;
+        body {
+            margin: 0px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial;
         }
         #top{
-            padding: 6px;
+            padding: 9px 0px;
             text-align: center;
-            border-bottom: 1px solid rgb(107, 105, 105);
+            display: flex;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        }
+        #top >img{
+            margin: auto;
+            width: 10%;
+        }
+        #back{
+            margin-left:10px;
+            
         }
         #googlesign>p {
             font-size: 14px;
@@ -36,7 +45,7 @@
             line-height:16px;
             font-weight:400;
             color:RGB(52, 59, 83);
-            margin-bottom: 25px;
+            /* margin-bottom: 25px; */
           
         }
         #googlesign>h1{
@@ -110,6 +119,9 @@
             font-size: 14px;
 
         }
+        #inputtext{
+            width: 100%;
+        }
         
         #paracondi1{
             font-size: 12px;
@@ -118,13 +130,15 @@
             font-weight:400;
         }
         .paracondi2{
-            /* width: 70%; */
+            width: 100%;
             font-size: 14px;
             color:RGB(52, 59, 83);
             margin-bottom: 30px;
             font-weight:400;
             line-height: 18px;
-            margin-left: 5px;
+            margin: auto;
+            margin-left: 2px;
+
         }
 
         #paracondi3{
@@ -189,6 +203,12 @@
             /* justify-content: space-between; */
             text-align: center;
         }
+        #keeplogin{
+            display: flex;
+            padding: auto;
+           align-content: center;
+           height: -10px;
+        }
         #gog{
             color: white;
             text-align: center;
@@ -204,15 +224,15 @@
     </style>
 </head>
 <body>
-    <header>
+    <!-- <header> -->
         <div id="top">
-            <a href="">
+            <a id="back" href="index.html"><i class="fa-solid fa-arrow-left-long"></i>
 
             </a>
             <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
                 alt="" onclick=window.location.href="index.html">
         </div>
-    </header>
+    <!-- </header> -->
     <div id="mainBox">
         
         <div id="googlesign">
@@ -229,12 +249,14 @@
             </button>
         
          <p id="option">or</p>
-        </div>
-        
+        </div id="inputtext">
+
         <input type="email" class= "signup" id="email"  placeholder="Email id" required>
         <input type="number" class= "signup" minlength="8" maxlength="8" placeholder="6-digit code" id="OTP" required>   
         <input type="password" class= "signup" minlength="8" maxlength="8" placeholder="Password" id="password" required>
+        <div id="keeplogin">
         <input type="checkbox" name="" class="chebx"> <span class="paracondi2">Keep me signed in</span>
+    </div>
         <p id="paracondi1">Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>            
         
         <button id="createAccount">Continue</button>
@@ -242,7 +264,7 @@
         <button id="verifyPass">Sign in</button>
         <button id="resendOTP">Resend OTP</button>
         <button id="enterPass">Enter Password instead</button>
-        <p id="goto">Don't have an account? <a href="signup.html">Create One</a></p>
+        <p id="goto">Don't have an account? <a href="./signup.html">Create One</a></p>
             <div id="othersign">
 
             <p>Other ways to sign up</p>
@@ -297,7 +319,7 @@
             document.querySelector("#createAccount").style.display = 'none'; 
             
             currentUser.push(elem);
-            localStorage.setItem("loignUser",JSON.stringify(currentUser));
+            localStorage.setItem("loginUser",JSON.stringify(currentUser));
                flag=true;
             }
         });   
@@ -399,5 +421,12 @@ function verify_pass(){
         }
 }   
     // }
+
+        var currentUser=JSON.parse(localStorage.getItem("loginUser"));
+        if(currentUser.length>0){
+            console.log(currentUser.length);
+        }else{
+            console.log("no current user");
+        }
 </script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
