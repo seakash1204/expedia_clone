@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <script src="https://kit.fontawesome.com/3e0c0ed060.js" crossorigin="anonymous"></script>
+    <style>
+          body {
+            background-color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial;
+        }
+        #top{
+            padding: 6px;
+            text-align: center;
+            border-bottom: 1px solid rgb(107, 105, 105);
+        }
+        #googlesign>p {
+            font-size: 14px;
+            line-height:16px;
+            font-weight:400;
+            color:RGB(52, 59, 83);
+            margin-bottom: 25px;
+        }
+    #emaillabel{
+            font-size: 14px;
+            line-height:16px;
+            font-weight:400;
+            color:RGB(52, 59, 83);
+       
+        }
+        ::placeholder{
+            font-size: 14px;
+            line-height:16px;
+            font-weight:400;
+            color:RGB(52, 59, 83);
+            margin-bottom: 25px;
+          
+        }
+        #googlesign>h1{
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 500;
+        }
+        #googlesign>p:nth-child(4), #option{
+      text-align: center;
+        margin: 20px 0px;
+        }
+       #googleBtn{
+        width: 10%;
+        margin-left: 0px;
+        text-align: center;
+        align-items: center;
+              
+       } 
+       #googlesign>button {
+        border-radius: 10px;
+        line-height:20px;
+        font-weight:400;
+        text-align:center;
+        align-items: center;
+        font-size:16px;
+        background-color: rgb(98, 98, 241);
+        color: white;
+        height: 45px;
+        border: none;
+       }
+       #createAccount, #enterPass, #resendOTP,#verifyOTP,#verifyPass  {
+        width: 100%;
+        border-radius: 10px;
+        line-height:20px;
+        font-weight:500;
+        text-align:center;
+        align-items: center;
+        font-size:16px;
+        background-color: rgb(98, 98, 241);
+        color: RGB(54, 98, 216);
+        height: 45px;
+        border: none;
+        margin-bottom: 20px;
+        color: white;
+        margin-top: 15px;
+       }
+       #enterPass, #resendOTP {
+        background-color: white;
+        color: blue;
+       }
+       #enterPass:hover, #resendOTP:hover {
+        background-color:RGB(231, 237, 253);
+
+       }
+       #createAccount::placeholder{
+        font-size: 16px;
+        line-height:20px;
+        font-weight:400;
+        text-align:center;
+        color: white;
+
+       }
+        .signup{
+            height: 43px;
+            width: 100%;
+            border-radius: 10px;
+            border: 0.2px solid black;
+            margin: 12px 0px;
+            padding-left: 10px;
+            font-size: 14px;
+
+        }
+        
+        #paracondi1{
+            font-size: 12px;
+            color: RGB(52, 59, 83);
+            margin-bottom: 30px;
+            font-weight:400;
+        }
+        .paracondi2{
+            font-size: 14px;
+            color:RGB(52, 59, 83);
+            margin-bottom: 30px;
+            font-weight:400;
+            line-height: 18px;
+            margin-left: 5px;
+           
+            
+        }
+
+        #paracondi3{
+            font-size: 14px;
+            color:RGB(52, 59, 83);
+            margin-bottom: 30px;
+            font-weight:400;
+            line-height: 18px;
+           
+            
+        }
+        span{
+            color: blue;
+        }
+
+        #othersign{
+            text-align: center;
+            margin: 30px 0px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        #othersign>p:nth-child(1){
+            margin-bottom:30px  ;
+        }
+        .fbg {
+        width: 4%;
+        margin: 20px 10px;
+        
+        }
+        #OTP, #enterPass, #resendOTP,.chebx,.paracondi2, #paracondi1,#verifyOTP, #verifyPass,#emaillabel{
+            display: none;
+        }
+   
+        .terms{
+            margin-left: 20px;
+            margin-right: 30px;
+        }
+        a{
+            color: blue;
+        }
+        #mainBox{
+            width: 30%;
+          margin: auto;
+            align-items: center;
+            align-content: center;
+        }
+        #regemail{
+            display: none;
+        }
+        #password {
+            display: none;
+            
+        }
+        #surname{
+            display: none;
+        }
+        #goto{
+            text-align: center;
+        }
+        
+
+        @media screen and (max-width: 899px) {
+            #mainBox {
+                width: 80%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <a href="">
+
+            </a>
+            <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
+                alt="" onclick=window.location.href="index.html">
+        </div>
+    </header>
+    <div id="mainBox">
+        
+        <div id="googlesign">
+        <h1 id="heading">Sign in</h1>
+        <p id="emaillabel">Email</p> 
+        <p id="parahead">Save an average of 15% on thousands of hotels as a member—it’s always free.
+        </p>
+         <button id="googlelogin"> <img id="googleBtn"  src="data:image/png;base64,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" alt="Google">Sign up with Google</button>
+         <p id="option">or</p>
+        </div>
+        
+        <input type="email" class= "signup" id="email"  placeholder="Email id" required>
+        <input type="number" class= "signup" minlength="8" maxlength="8" placeholder="6-digit code" id="OTP" required>   
+        <input type="password" class= "signup" minlength="8" maxlength="8" placeholder="Password" id="password" required>
+        <input type="checkbox" name="" class="chebx"> <span class="paracondi2">Keep me signed in</span>
+        <p id="paracondi1">Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>            
+        
+        <button id="createAccount">Continue</button>
+        <button id="verifyOTP">Continue</button>
+        <button id="verifyPass">Sign in</button>
+        <button id="resendOTP">Resend OTP</button>
+        <button id="enterPass">Enter Password instead</button>
+        <p id="goto">Don't have an account? <a href="signup.html">Create One</a></p>
+            <div id="othersign">
+
+            <p>Other ways to sign up</p>
+            <div>
+                <img class="fbg" src="https://a.travel-assets.com/egds/marks/apple.svg" alt="apple">
+                <img class="fbg" src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="fb">
+            </div>
+            <div>
+                <p id="paracondi3">By creating an account, I agree to the Expedia  and  <span class="lastSpan">Terms and Conditions, Privacy Statement </span>
+                    and <span class="lastSpan">Expedia Rewards Terms and Conditions.</span></p>
+            </div>
+        
+    </div>
+</div>
+</body>
+</html>
+<script>
+    // var email=document.querySelector("#email").value;
+    // var pass=document.querySelector("#password").value;
+    // console.log(email,pass);
+
+    document.querySelector("#createAccount").addEventListener("click",logInUser);
+    var loginData=JSON.parse(localStorage.getItem("userData"));
+    var flag=false;
+    var num;
+
+    var otpmath = Math.floor(Math.random() * 599999) + 100000;
+    var currentUser=[];
+   
+    function logInUser(){
+        var email=document.querySelector("#email").value;
+   
+            loginData.map(function(elem,i){
+            console.log(elem.name,elem.password);
+            if(elem.email==email){
+            // console.log(elem.email,elem.password);
+            num=i;
+            document.querySelector("#heading").textContent="Confirm your account";
+            document.querySelector("#parahead").textContent="Enter the secure code we sent to your email. Check junk post if it’s not in your inbox.";
+            document.querySelector("#email").style.display="none";
+            document.querySelector(".paracondi2").style.display="block";
+            document.querySelector(".chebx").style.display="block";
+            document.querySelector("#paracondi1").style.display="block";
+            document.querySelector("#paracondi1").textContent="This is for personal devices only. Don’t check this on shared devices to keep your account secure.";
+            document.querySelector("#enterPass").style.display="block";
+            document.querySelector("#resendOTP").style.display="block";
+            document.querySelector("#othersign").style.display="none";  
+            document.querySelector("#googlelogin").style.display = 'none';    
+            document.querySelector("#OTP").style.display = 'block';     
+            document.querySelector("#option").style.display = 'none';  
+            document.querySelector("#verifyOTP").style.display = 'block';     
+            document.querySelector("#createAccount").style.display = 'none'; 
+            
+            currentUser.push(elem);
+            localStorage.setItem("loignUser",JSON.stringify(currentUser));
+               flag=true;
+            }
+        });   
+        
+        if (flag) {
+console.log(otpmath);
+Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "shreemore1109@gmail.com",
+    Password: "6382989DA032A28C4F126900AFADFB4DAB4C",
+    To: email,
+    From: "shreemore1109@gmail.com",
+    Subject: "This is the subject",
+    Body: "<h1>" + "Hellow" + "  " + loginData[num].name + "</h1>" + "<h2>" + "Verification code" + "</h2>" + "<h4>" + "Please use the verification code below to sign in" + "<h4>" + "<h2>" + otpmath + "</h2>" + "<h4>" + "If you didn't request this, you can ignore this email." + "</h4>" + "<h3>" + "Thanks" + "Team Expedia co." + "</h3>",
+
+}).then(
+    message => alert("OTP Sent Sucessfully in your email id")
+);
+
+}
+else {
+document.querySelector("#email").value = "";
+alert("Please Enter Register Email Id")
+}
+            }
+
+
+document.querySelector("#verifyOTP").addEventListener("click", verify_OTP);
+
+function verify_OTP() {
+    var otp = document.querySelector("#OTP").value;
+    if (otp == "123456" || otp == otpmath) {  
+        alert("Sign in Sucessfull");
+        window.location.href="index.html"   
+    } else {
+        document.querySelector("#OTP").value = "";
+        alert("please Enter Valid OTP");
+    }
+}
+
+document.querySelector("#resendOTP").addEventListener("click", resend_OTP);
+function resend_OTP(){
+    console.log(otpmath);
+Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "shreemore1109@gmail.com",
+    Password: "6382989DA032A28C4F126900AFADFB4DAB4C",
+    To: email,
+    From: "shreemore1109@gmail.com",
+    Subject: "This is the subject",
+    Body: "<h1>" + "Hellow" + "  " + loginData[num].name + "</h1>" + "<h2>" + "Verification code" + "</h2>" + "<h4>" + "Please use the verification code below to sign in" + "<h4>" + "<h2>" + otpmath + "</h2>" + "<h4>" + "If you didn't request this, you can ignore this email." + "</h4>" + "<h3>" + "Thanks" + "Team Expedia co." + "</h3>",
+}).then(
+    message => alert("OTP Sent Sucessfully in your email id")
+);
+
+}
+
+
+document.querySelector("#enterPass").addEventListener("click", enter_Pass);
+function enter_Pass(){
+    document.querySelector("#heading").textContent="Enter your password";
+    document.querySelector("#emaillabel").style.display="block";
+            document.querySelector("#parahead").textContent=currentUser[0].email;
+            document.querySelector("#email").style.display="none";
+            document.querySelector("#OTP").style.display = 'none'; 
+            document.querySelector("#password").style.display = 'block'; 
+            document.querySelector("#resendOTP").style.display = 'none'; 
+            document.querySelector("#enterPass").style.display = 'none'; 
+            document.querySelector("#verifyOTP").style.display="none";
+            document.querySelector(".paracondi2").style.display="block";
+            document.querySelector(".chebx").style.display="block";
+            document.querySelector("#paracondi1").style.display="block";
+            document.querySelector("#paracondi1").textContent="This is for personal devices only. Don’t check this on shared devices to keep your account secure.";           
+            document.querySelector("#othersign").style.display="none";  
+            document.querySelector("#googlelogin").style.display = 'none';    
+            document.querySelector("#option").style.display = 'none';  
+            document.querySelector("#verifyPass").style.display = 'block';     
+            document.querySelector("#goto").style.display = 'none';  
+            document.querySelector("#createAccount").style.display = 'none'; 
+}
+document.querySelector("#verifyPass").addEventListener("click", verify_pass);
+var flag1=false;
+function verify_pass(){
+    var pass=document.querySelector("#password").value;
+            loginData.map(function(elem,i){
+            console.log(elem.email,elem.password,pass);
+            if(elem.email==email && elem.password===pass){
+            // console.log(elem.email,elem.password);
+        flag1=true;
+           
+            }
+        }); 
+        if(flag1){
+            alert("sign in sucessfull")
+            window.location.href="index.html"
+        }  else{
+            alert("The entered password is incorrect")
+            document.querySelector("#password").value="";
+        }
+}   
+    // }
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
