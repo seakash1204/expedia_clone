@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="hotel_landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--  for two dates -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!--  for two dates -->
+    <!-- navbar bootstrap dropdown -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- navbar bootstrap dropdown -->
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    
+    <!-- my code starts -->
+    <!-- we have to import navbar here -->
+    <div id="navbar">
+        <nav>
+            <div id="logo">
+                <img src="logo1.svg" alt="logo">
+            </div>
+
+            <div class="dropdown">
+                <button class="btn bg-white btn-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More travel
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-hotel"></i> Stays</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plane"></i>  Flights</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-car"></i> Cars</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-person-walking-luggage"></i> Packages</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-ticket"></i> Holiday Activities</a></li>
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                  <li><a class="dropdown-item" href="#">Groups & Meetings</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile</a></li>
+                </ul>
+            </div>
+
+            <div id="rightDiv">
+                <ul>
+                    <li id="popup" onclick="showModal()">
+                        <a href="#" ><i class="fa-solid fa-globe"></i>English</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Trips</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="overlay"></div>
+
+        <div class="lang">
+            <div>
+                <span><i class="fa-sharp fa-solid fa-xmark"></i></span>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-info"></i><br>
+                <br><p> You can only access your trip information and Expedia Rewards points from the Expedia site you booked on.</p>
+            </div>
+            <form action="">
+                <select name="" id="region">
+                    <option value="India">India</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                </select>
+
+                <select name="" id="language">
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                </select>
+                <button>Save</button>
+            </form>
+        </div>
+    </div>
+    <!-- we have to import search hotel div here -->
+
+    <!-- middle porsion -->
+    <!-- <div id="input_div">
+        <input type="text" id="input_location" placeholder="Going to">
+    
+    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="input_date"/>
+
+        <input type="text" id="input_count" placeholder="Travellers"  onclick="showPayModal()">
+        <button id="input_button_id"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div> -->
+    <div id="input_div">
+        <div id="input_location_div">
+          <p><i class="fa-solid fa-location-dot"></i></p>
+        <input type="text" id="input_location" placeholder="Going to" >
+      </div>
+      <div id="input_date_div">
+        <p><i class="fa-solid fa-calendar-days"></i></p>
+        <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="input_date"/>
+      </div>
+      <div id="input_count_div">
+        <p><i class="fa-solid fa-user"></i></p>
+        <input type="text" id="input_count" placeholder="Travellers"  onclick="showPayModal()">
+      </div>
+      <div id="input_button_id_div">
+        <button id="input_button_id"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      </div>
+    
+    <!-- faizan start -->
+    <div class="overlay"></div>
+
+    <div class="reserve">
+        <p id="traveller">Travellers</p>
+        <div id="adults_parent">
+            <div id="adults_div">Adults</div>
+            <div id="adults_parent_1"> 
+                <div id="adults_parent_2">-</div>
+                <div id="adults_parent_3">0</div>
+                <div id="adults_parent_4">+</div>
+            </div>
+        </div>
+        <div id="children_parent">
+            <div id="children_div_1">Children</div>
+            <div id="parent_cont">
+            <div id="children_div_2">-</div>
+                <div id="children_div_3">0</div>
+                <div id="children_div_4">+</div> </div>
+            </div>
+                <button id="cross_tag">Done</button>
+    </div>
+    <!-- faizan end -->
+         
+
+
+    <p id="ideas_text">Ideas for your next trip</p>
+    <div id="main_div_ideas">
+        <div id="main_div_ideas_1">
+            <img src="window.png" alt="">
+            <p class="main_div_ideas_1_p1">Flexible hotel deals</p>
+            <p class="main_div_ideas_1_p2">Here's great selection of hotels offering free cancellation if your plan
+                change. Because Flexiblility
+                Matters </p>
+        </div>
+        <div id="main_div_ideas_2">
+
+            <div id="main_div_ideas_2_1">
+                <div id="main_div_ideas_2_1_1">
+                    <img src="next_greter.png" alt="">
+                </div>
+                <div id="main_div_ideas_2_1_2">
+                    <p id="main_div_ideas_2_1_2_p1">Find your next gataway</p>
+                    <p id="main_div_ideas_2_1_2_p2">Last Minute Deal are available</p>
+                </div>
+            </div>
+            <div id="main_div_ideas_2_2">
+                <div id="main_div_ideas_2_2_1">
+                    <img src="leddy.png" alt="">
+                </div>
+                <div id="main_div_ideas_2_2_2">
+                    <p id="main_div_ideas_2_2_2_p1">Find the Perfect holiday to <br> look forward too</p>
+                    <p id="main_div_ideas_2_2_2_p2">Save today on a trip for tomorrow</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="explore_ptag">Explore, discover and save</p>
+    <div id="discover_and_save">
+        <img src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg" alt="">
+    </div>
+
+    <div id="qr_main_div">
+        <div id="qr_main_div_1">
+            <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt="">
+        </div>
+        <div id="qr_main_div_2">
+            <p id="qr_main_div_2_p1">Go further with the Expedia app</p>
+            <p id="qr_main_div_2_p2">Save even more - get up to 20% on select hotels and earn double the points when
+                <br> you book on the app. Our app deals help you to save on
+                trips so you can travel <br> more and manage it all on the go.</p>
+            <p id="qr_main_div_2_p3">Scan the QR code with your device camera and download our app</p>
+        </div>
+        <div id="qr_main_div_3">
+            <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr/27_QR_FOOTER.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- writing -->
+
+    <div id="writing_main_div">
+        <div>
+            <p id="writing_main_div_p1">Tips for Booking a Hotel </p>
+            <p id="writing_main_div_p2">No holiday is complete without the right hotel. If you're looking to plan an
+                unforgettable <br>
+                trip, you'll need to find the right place to stay. Learn how you can book the right hotel for <br>
+                your needs whether you're taking the family on holiday, travelling with someone special or <br>
+                just taking some time away for yourself.</p>
+        </div>
+        <div>
+            <p id="writing_main_div_p1">How can I find the cheapest hotels?</p>
+            <p id="writing_main_div_p2">
+                The cheapest hotels are easy to find if you know what factors you need to consider. The <br>
+                time of year you travel plays a big role, with cheap hotel rooms being more common during <br>
+                the off-season. Additionally, the star rating of the hotel and the kinds of amenities you opt <br>
+                for can all play a big part. Just keep in mind that these are all general trends rather than <br>
+                universal rules. Don't forget that you can sort your search results by price to put the cheapest options
+                at the <br>
+                top of your results.
+            </p>
+        </div>
+        <div>
+            <p id="writing_main_div_p1">How to book a hotel?</p>
+            <p id="writing_main_div_p2">When you're looking to book a hotel, we've got you covered. With Expedia, all
+                you have to <br> do is input your travel dates and your destination, and we'll show you some of the best
+                <br> hotels available. You can add additional search filters to sort your results even further <br>
+                whether you're looking for a cheap hotel room or you want to splurge on something more <br> luxurious.
+                You'll find Hotels in Mumbai, Hotels in Delhi and Hotels in Bangalore among <br> countless others across
+                the world. </p>
+        </div>
+        <div>
+            <p id="writing_main_div_p1">How can I find some of the best deals on hotels?</p>
+            <p id="writing_main_div_p2">Hotel deals are easy to find when you use Expedia. All you have to do is
+                implement the <br> necessary search filters when trying to find a hotel for your next holiday. Filters
+                are available <br> for features like being fully refundable and having free cancellation. If you're an
+                Expedia<br> member, you can often find additional discounts that you wouldn't be able to enjoy<br>
+                otherwise. Of course, always remember to sort by price to see the cheapest suitable<br>options that meet
+                your criteria first on the results page.</p>
+        </div>
+        <div>
+            <p id="writing_main_div_p1">What are the most important things when choosing a hotel?</p>
+            <p id="writing_main_div_p2">When you're choosing your hotel, it's important to consider what kind of holiday
+                <br> experience you're looking to enjoy. Family travellers will need to book something with<br> plenty
+                of room, while couples may not need something quite as large. Travelling with your<br> partner, however,
+                may make you more interested in amenities like hot tubs, so be sure to <br>include the appropriate
+                search filters based on the experience you're looking for. You'll find <br>filters for a variety of
+                features and amenities as well as for star ratings, reviews and <br>proximity to certain attractions.
+            </p>
+        </div>
+        <div>
+            <p id="writing_main_div_p1">Why should I book a hotel with Expedia?</p>
+            <p id="writing_main_div_p2">Booking with Expedia makes planning a holiday easy. Not only will you be able to
+                search a <br> massive array of hotels with tools that make it easy to narrow down your options, but you
+                can<br> book a flight as well. You may even find additional discounts by booking your hotel and
+                <br>flight together. Additionally, you can become a member and enjoy extra hotel discounts<br> you
+                wouldn't be able to enjoy otherwise. Becoming a member is completely free, so there's <br>no barrier to
+                entry that comes with it.</p>
+        </div>
+        <div>
+            <p id="writing_main_div_p1">How far in advance should I book a hotel?</p>
+            <p id="writing_main_div_p2">When booking a hotel, your best bet is to book a little in advance. If you book
+                too far in <br> advance, prices may be higher. Wait too long, however, and prices may also increase.<br>
+                Generally, the sweet spot is around 2 to 3 weeks before your holiday. Every destination is <br>
+                different, but you can start monitoring how prices change up to 40 days in advance. Keep <br>in mind
+                that booking at the last minute can be cheaper than you might think, thanks to<br> hotels being
+                desperate to get their last vacancies filled.</p>
+        </div>
+        <div>
+            <p id="writing_main_div_p1">Are hotels fully refundable on Expedia?</p>
+            <p id="writing_main_div_p2">Some hotels on Expedia do offer flexible cancellation policies. You'll be able
+                to see which <br> ones do on your search results page because they'll be labelled as such in green text.
+                Of<br> course, you can always implement the 'fully refundable' search filter to only show results
+                <br>that offer this enticing feature.</p>
+        </div>
+    </div>
+
+    <!-- footer_section_div -->
+    <div id="footer_section_div">
+
+    </div>
+    <!-- my code ends -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<!-- for dates -->
+<script>$(function() {
+    $('input[name="daterange"]').daterangepicker({
+      opens: 'left'
+    }, function(start, end, label) {
+      console.log("A new date selection was made: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
+    });
+  });</script>
+
+
+<!-- navbar dropdown -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- navbar dropdown -->
+
+<!-- footer start here -->
+<div id="footer">
+    <div>
+        <img src="expedia_group.svg" alt="EG">
+    </div>
+    <div>
+        <div>
+            <h4>Company</h4>
+            <p>About Us</p>
+            <p>Jobs</p>
+            <p>List your property</p>
+            <p>Partnerships</p>
+        </div>
+        <div>
+            <h4>Explore</h4>
+            <p>India travel guide</p>
+            <p>Hotels in India</p>
+            <p>Holiday rentals in India</p>
+            <p>Holiday packages in India</p>
+            <p>Domestic flights</p>
+            <p>Car hire in India</p>
+            <p>All accommodation types</p>
+            <p>Travel blog</p>
+        </div>
+        <div>
+            <h4>Policies</h4>
+            <p>Privacy Statement</p>
+            <p>Terms of use</p>
+            <p>Vrbo terms and conditions</p>
+        </div>
+        <div>
+            <h4>Help</h4>
+            <p>Support</p>
+            <p>Change or cancel your booking</p>
+            <p>Refund process and timelines</p>
+            <p>Book a flight using an airline credit</p>
+            <p>International travel documents</p>
+        </div>
+    </div>
+    <div>
+        <img src="secure.png" alt="secure">
+        <p>© 2023 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
+    </div>
+</div>
+<!-- footer end here -->
+
+    </body>
+
+</html>
+
+<script src="hotel_landing.js"></script>
+
+
+<!-- for dates -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!-- for dates  -->
